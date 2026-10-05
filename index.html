@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORBITAL CATALYST | Vikas Sharma — Transformative Coaching for Technology Leaders</title>
+  <meta name="description" content="OrbitalCatalyst blends ICF coaching competencies with contemplative wisdom from Krishnamurti, Ashtavakra, and Osho to help IT leaders achieve transformative growth.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='109' cy='107' r='5' fill='%23556'/%3E%3Cpath d='M109.2,106.9A3.5,3.5,0,0,1,112.7,110.4A3.9,3.9,0,0,1,108.8,114.3A4.5,4.5,0,0,1,104.3,109.9A5,5,0,0,1,109.3,104.9A5.7,5.7,0,0,1,115,110.5A6.4,6.4,0,0,1,108.6,116.9A7.2,7.2,0,0,1,101.4,109.7A8.1,8.1,0,0,1,109.5,101.6A9.2,9.2,0,0,1,118.7,110.8A10.3,10.3,0,0,1,108.4,121.1A11.7,11.7,0,0,1,96.7,109.4A13.1,13.1,0,0,1,109.9,96.3A14.8,14.8,0,0,1,124.7,111.1A16.7,16.7,0,0,1,108,127.8A18.9,18.9,0,0,1,89.1,109A21.3,21.3,0,0,1,110.4,87.7A24,24,0,0,1,134.4,111.7A27.1,27.1,0,0,1,107.3,138.8A30.5,30.5,0,0,1,76.8,108.2A34.4,34.4,0,0,1,111.2,73.8A38.8,38.8,0,0,1,150,112.6A43.8,43.8,0,0,1,106.2,156.4A49.4,49.4,0,0,1,56.9,107A55.7,55.7,0,0,1,112.6,51.4A62.8,62.8,0,0,1,175.4,114.2A70.8,70.8,0,0,1,104.5,185A79.9,79.9,0,0,1,24.6,105.1A90.1,90.1,0,0,1,114.7,15' fill='none' stroke='%23aab' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M114.7,15A100,100,0,0,1,165,28' fill='none' stroke='%23dde' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='165' cy='28' r='8' fill='%23dde'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+
+    /* ===== DEFAULT THEME (Electric) — all values driven by CSS custom properties ===== */
+    :root {
+      --font-heading:'Rajdhani',sans-serif;
+      --font-body:'Inter',system-ui,sans-serif;
+      --heading-transform:uppercase;
+      --heading-spacing:.08em;
+      --navy:#0d1117;
+      --navy-soft:#131920;
+      --navy-card:#171e27;
+      --navy-light:#1c2530;
+      --slate-900:#1e2a3a;
+      --slate-800:#2a3a4e;
+      --slate-700:#3d5068;
+      --slate-600:#506882;
+      --slate-500:#6b839c;
+      --slate-400:#8a9fb6;
+      --slate-300:#a8bdd0;
+      --slate-200:#c8d8e8;
+      --slate-100:#e2ecf4;
+      --white:#f0f4f8;
+      --pure-white:#ffffff;
+      --accent:#6ee7b7;
+      --accent-dim:rgba(110,231,183,.15);
+      --accent-glow:rgba(110,231,183,.04);
+      --accent-glow2:rgba(110,180,231,.03);
+      --orbit-border:rgba(110,231,183,.06);
+      --core-glow:rgba(110,231,183,.05);
+      --nav-bg:rgba(13,17,23,.92);
+      --overlay-bg:rgba(13,17,23,.98);
+      --stroke:rgba(255,255,255,.06);
+      --stroke-hover:rgba(255,255,255,.15);
+      --radius:0px;
+      --transition:.4s cubic-bezier(.22,1,.36,1);
+    }
+
+    html { scroll-behavior:smooth; font-size:16px; }
+    body { font-family:var(--font-body); color:var(--slate-300); background:var(--navy); line-height:1.7; overflow-x:hidden; cursor:none; transition:background .35s ease,color .35s ease; }
+    h1,h2,h3,h4 { font-family:var(--font-heading); line-height:1.1; color:var(--white); font-weight:600; text-transform:var(--heading-transform); letter-spacing:var(--heading-spacing); transition:color .35s ease; }
+    .container { max-width:1200px; margin:0 auto; padding:0 2rem; }
+    a,button,.svc-panel,.pillar,.faq-q { cursor:none; }
+
+    /* Preloader */
+    #preloader { position:fixed; inset:0; z-index:9999; background:var(--navy); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:2rem; transition:opacity .6s ease,visibility .6s ease; }
+    #preloader.hidden { opacity:0; visibility:hidden; pointer-events:none; }
+    .loader-spiral { width:80px; height:80px; }
+    .loader-spiral svg { animation:spin 2s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .loader-text { font-family:var(--font-heading); font-size:.9rem; color:var(--slate-500); letter-spacing:.35em; text-transform:var(--heading-transform); font-weight:600; animation:fadeInOut 2s ease-in-out infinite; }
+    @keyframes fadeInOut { 0%,100%{opacity:.3;} 50%{opacity:.9;} }
+
+    /* Logo */
+    .oc-logo-animated .oc-sat-pulse { animation:satPulse 2s ease-in-out infinite alternate; }
+    @keyframes satPulse { 0%{opacity:.5;r:4;} 100%{opacity:1;r:6;} }
+
+    /* Custom cursor */
+    .cursor-dot { width:6px;height:6px;background:var(--accent);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transition:transform .1s ease,opacity .3s,background .35s;mix-blend-mode:difference; }
+    .cursor-ring { width:36px;height:36px;border:1.5px solid var(--accent);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9997;transition:transform .2s ease,width .3s,height .3s,opacity .3s,border-color .35s;mix-blend-mode:difference; }
+    .cursor-off .cursor-dot,.cursor-off .cursor-ring { opacity:0!important;visibility:hidden; }
+    .cursor-off,.cursor-off a,.cursor-off button,.cursor-off .svc-panel,.cursor-off .pillar,.cursor-off .faq-q { cursor:auto; }
+    @media(hover:none){ .cursor-dot,.cursor-ring,.cursor-toggle{display:none!important;} body,a,button,.svc-panel,.pillar,.faq-q{cursor:auto;} }
+
+    /* Nav */
+    .nav { position:fixed; top:0; width:100%; z-index:100; padding:1.25rem 0; transition:background var(--transition),padding var(--transition); }
+    .nav.scrolled { background:var(--nav-bg); backdrop-filter:blur(20px); padding:.75rem 0; border-bottom:1px solid var(--stroke); }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; }
+    .brand { font-family:var(--font-heading); font-size:1.3rem; font-weight:700; color:var(--pure-white); text-decoration:none; letter-spacing:.15em; text-transform:var(--heading-transform); display:flex; align-items:center; gap:.75rem; transition:color .35s ease; }
+    .brand .thin { font-weight:400; color:var(--slate-400); transition:color .35s ease; }
+    .nav-links { display:flex; gap:2.5rem; list-style:none; align-items:center; }
+    .nav-links a { text-decoration:none; color:var(--slate-400); font-family:var(--font-heading); font-size:.85rem; font-weight:600; letter-spacing:.12em; text-transform:var(--heading-transform); transition:color var(--transition); }
+    .nav-links a:hover { color:var(--pure-white); }
+    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1.8rem; font-family:var(--font-heading); font-weight:700; font-size:.85rem; text-decoration:none; border:none; cursor:none; transition:all var(--transition); letter-spacing:.12em; text-transform:var(--heading-transform); }
+    .btn-accent { background:var(--accent); color:var(--navy); }
+    .btn-accent:hover { background:var(--pure-white); transform:translateY(-2px); box-shadow:0 8px 32px var(--accent-dim); }
+    .btn-outline { background:transparent; border:1px solid var(--slate-600); color:var(--slate-300); }
+    .btn-outline:hover { border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
+
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:none; padding:4px; z-index:200; }
+    .hamburger span { display:block; width:28px; height:1.5px; background:var(--pure-white); transition:var(--transition); }
+    .hamburger.active span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity:0; }
+    .hamburger.active span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+    .mobile-menu { position:fixed; inset:0; background:var(--overlay-bg); backdrop-filter:blur(24px); z-index:150; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2.5rem; opacity:0; visibility:hidden; transition:opacity .4s ease,visibility .4s ease; }
+    .mobile-menu.open { opacity:1; visibility:visible; }
+    .mobile-menu a { font-family:var(--font-heading); font-size:1.8rem; font-weight:600; color:var(--slate-400); text-decoration:none; transition:color var(--transition); letter-spacing:.15em; text-transform:var(--heading-transform); }
+    .mobile-menu a:hover { color:var(--accent); }
+
+    /* Hero */
+    .hero { min-height:100vh; display:flex; align-items:center; position:relative; overflow:hidden; background:var(--navy); border-bottom:1px solid var(--stroke); transition:background .35s ease; }
+    .hero-bg { position:absolute; inset:0; pointer-events:none; }
+    .hero-bg::before { content:''; position:absolute; top:-20%; right:-10%; width:600px; height:600px; background:radial-gradient(circle,var(--accent-glow) 0%,transparent 70%); }
+    .hero-bg::after { content:''; position:absolute; bottom:-30%; left:-15%; width:700px; height:700px; background:radial-gradient(circle,var(--accent-glow2) 0%,transparent 70%); }
+    .hero-grid { position:absolute; inset:0; pointer-events:none; }
+    .hero-grid .h-line { position:absolute; left:0; right:0; height:1px; background:var(--stroke); }
+    .hero-grid .v-line { position:absolute; top:0; bottom:0; width:1px; background:var(--stroke); }
+    .hero-inner { position:relative; z-index:2; display:grid; grid-template-columns:1.2fr .8fr; gap:4rem; align-items:center; padding-top:8rem; padding-bottom:6rem; }
+    .hero-text { color:var(--white); }
+    .hero-eyebrow { display:inline-flex; align-items:center; gap:.75rem; font-family:var(--font-heading); font-size:.75rem; font-weight:600; text-transform:var(--heading-transform); letter-spacing:.25em; color:var(--accent); margin-bottom:2rem; transition:color .35s ease; }
+    .hero-eyebrow::before { content:''; width:40px; height:1.5px; background:var(--accent); transition:background .35s ease; }
+    .hero h1 { font-size:clamp(3rem,6vw,5rem); font-weight:700; margin-bottom:1.5rem; line-height:1.05; }
+    .hero h1 em { font-style:normal; color:var(--accent); transition:color .35s ease; }
+    .hero-sub { font-size:1rem; color:var(--slate-400); max-width:500px; margin-bottom:3rem; line-height:1.8; font-weight:300; }
+    .hero-buttons { display:flex; gap:1rem; flex-wrap:wrap; }
+
+    .orbital-vis { position:relative; width:100%; aspect-ratio:1; max-width:400px; justify-self:center; }
+    .orbit { position:absolute; border:1px solid var(--orbit-border); border-radius:50%; top:50%; left:50%; transform:translate(-50%,-50%); transition:border-color .35s ease; }
+    .orbit:nth-child(1) { width:100%; height:100%; animation:orbitSpin 30s linear infinite; }
+    .orbit:nth-child(2) { width:70%; height:70%; animation:orbitSpin 22s linear infinite reverse; }
+    .orbit:nth-child(3) { width:42%; height:42%; animation:orbitSpin 16s linear infinite; }
+    @keyframes orbitSpin { to { transform:translate(-50%,-50%) rotate(360deg); } }
+    .orbit-dot { position:absolute; width:6px; height:6px; background:var(--accent); border-radius:50%; top:-3px; left:50%; transform:translateX(-50%); opacity:.6; transition:background .35s ease; }
+    .orbit:nth-child(2) .orbit-dot { width:5px; height:5px; top:-2.5px; opacity:.4; }
+    .orbit:nth-child(3) .orbit-dot { width:4px; height:4px; top:-2px; opacity:.3; }
+    .orbital-core { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:100px; height:100px; border-radius:50%; background:radial-gradient(circle,var(--navy-light) 0%,var(--navy) 100%); display:flex; align-items:center; justify-content:center; box-shadow:0 0 80px var(--core-glow); }
+
+    .scroll-hint { position:absolute; bottom:2rem; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:.5rem; color:var(--slate-600); font-family:var(--font-heading); font-size:.7rem; letter-spacing:.25em; text-transform:var(--heading-transform); font-weight:600; z-index:2; }
+    .scroll-mouse { width:20px; height:30px; border:1.5px solid var(--slate-600); border-radius:10px; position:relative; }
+    .scroll-mouse::after { content:''; width:2px; height:6px; background:var(--accent); border-radius:2px; position:absolute; top:5px; left:50%; transform:translateX(-50%); animation:scrollBounce 1.8s ease-in-out infinite; transition:background .35s ease; }
+    @keyframes scrollBounce { 0%,100%{transform:translateX(-50%) translateY(0);opacity:1;} 50%{transform:translateX(-50%) translateY(8px);opacity:.3;} }
+
+    /* Common */
+    section { padding:7rem 0; }
+    .section-label { display:inline-flex; align-items:center; gap:.75rem; font-family:var(--font-heading); font-size:.72rem; font-weight:700; text-transform:var(--heading-transform); letter-spacing:.25em; color:var(--accent); margin-bottom:1rem; transition:color .35s ease; }
+    .section-label::before { content:''; width:24px; height:1.5px; background:var(--accent); transition:background .35s ease; }
+    .section-heading { font-size:clamp(2.2rem,4.5vw,3.5rem); font-weight:700; color:var(--white); margin-bottom:1rem; }
+    .section-heading strong { color:var(--accent); font-weight:700; transition:color .35s ease; }
+    .section-sub { color:var(--slate-500); max-width:520px; margin-bottom:3.5rem; font-weight:300; }
+    .centered { text-align:center; }
+    .centered .section-sub { margin-inline:auto; }
+    .centered .section-label { justify-content:center; }
+    .reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease,transform .6s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal[data-delay="1"]{transition-delay:.1s} .reveal[data-delay="2"]{transition-delay:.2s} .reveal[data-delay="3"]{transition-delay:.3s} .reveal[data-delay="4"]{transition-delay:.4s}
+
+    /* Philosophy */
+    .philosophy { background:var(--navy-soft); border-top:1px solid var(--stroke); border-bottom:1px solid var(--stroke); transition:background .35s ease; }
+    .philosophy-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+    .philosophy-visual { position:relative; border:1px solid var(--stroke); padding:3rem; color:var(--slate-300); min-height:440px; display:flex; flex-direction:column; justify-content:center; background:var(--navy); transition:background .35s ease; }
+    .philosophy-visual::before { content:''; position:absolute; top:-1px; left:0; width:60px; height:2px; background:var(--accent); transition:background .35s ease; }
+    .philosophy-visual blockquote { font-family:var(--font-heading); font-size:1.4rem; font-weight:400; font-style:normal; line-height:1.6; margin-bottom:1rem; color:var(--slate-200); letter-spacing:.02em; }
+    .philosophy-visual cite { font-style:normal; font-family:var(--font-heading); font-size:.8rem; color:var(--accent); letter-spacing:.15em; text-transform:var(--heading-transform); font-weight:600; transition:color .35s ease; }
+    .pillar-list { display:flex; flex-direction:column; gap:1rem; margin-top:2rem; }
+    .pillar { display:flex; gap:1.25rem; align-items:flex-start; padding:1.25rem; border:1px solid transparent; transition:border-color var(--transition),background var(--transition); cursor:none; }
+    .pillar:hover { border-color:var(--accent-dim); background:var(--navy-card); }
+    .pillar-icon { flex-shrink:0; width:44px; height:44px; border:1px solid var(--stroke); display:flex; align-items:center; justify-content:center; font-size:1.1rem; color:var(--accent); transition:color .35s ease; }
+    .pillar h4 { font-size:1rem; color:var(--white); margin-bottom:.25rem; }
+    .pillar p { font-size:.85rem; color:var(--slate-500); margin:0; }
+
+    /* Stats */
+    .stats-bar { background:var(--navy); padding:4rem 0; border-bottom:1px solid var(--stroke); transition:background .35s ease; }
+    .stats-row { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
+    .stat-item { border-right:1px solid var(--stroke); padding:1rem; }
+    .stat-item:last-child { border-right:none; }
+    .stat-num { font-family:var(--font-heading); font-size:3.5rem; font-weight:700; color:var(--accent); line-height:1; letter-spacing:.02em; transition:color .35s ease; }
+    .stat-label { font-family:var(--font-heading); font-size:.78rem; color:var(--slate-600); margin-top:.5rem; text-transform:var(--heading-transform); letter-spacing:.15em; font-weight:600; }
+
+    /* Services — Katalyst-style spotlight */
+    .services { background:var(--navy-soft); border-top:1px solid var(--stroke); padding:8rem 0; transition:background .35s ease; }
+    .services-spotlight { display:grid; grid-template-columns:repeat(4,1fr); }
+    .svc-panel {
+      position:relative; padding:2.5rem 2rem; border:1px solid var(--stroke);
+      margin-left:-1px; background:var(--navy); min-height:420px;
+      display:flex; flex-direction:column; justify-content:space-between;
+      transition:opacity var(--transition),transform .5s cubic-bezier(.22,1,.36,1),background var(--transition),border-color var(--transition);
+      overflow:hidden; cursor:none;
+    }
+    .svc-panel::before {
+      content:''; position:absolute; top:0; left:0; width:100%; height:2px;
+      background:var(--accent); transform:scaleX(0); transform-origin:left;
+      transition:transform .5s cubic-bezier(.22,1,.36,1),background .35s ease;
+    }
+    .svc-panel::after {
+      content:''; position:absolute; inset:0;
+      background:radial-gradient(ellipse at top, var(--accent-glow), transparent 70%);
+      opacity:0; transition:opacity var(--transition);
+    }
+    .services-spotlight:hover .svc-panel { opacity:.4; }
+    .services-spotlight:hover .svc-panel:hover { opacity:1; background:var(--navy-card); border-color:var(--stroke-hover); transform:scale(.98); }
+    .services-spotlight:hover .svc-panel:hover::before { transform:scaleX(1); }
+    .services-spotlight:hover .svc-panel:hover::after { opacity:1; }
+    .svc-num { font-family:var(--font-heading); font-size:4.5rem; font-weight:300; color:var(--navy-light); line-height:1; margin-bottom:auto; transition:color var(--transition); letter-spacing:.05em; }
+    .services-spotlight:hover .svc-panel:hover .svc-num { color:var(--slate-700); }
+    .svc-content { margin-top:2rem; }
+    .svc-panel h3 { font-size:1.3rem; margin-bottom:.75rem; color:var(--white); }
+    .svc-panel p { font-size:.88rem; color:var(--slate-500); margin-bottom:1rem; line-height:1.7; text-transform:none; letter-spacing:0; }
+    .svc-features { list-style:none; }
+    .svc-features li { padding:.3rem 0; padding-left:1.2rem; font-size:.82rem; color:var(--slate-500); position:relative; text-transform:none; letter-spacing:0; }
+    .svc-features li::before { content:''; position:absolute; left:0; top:.55rem; width:5px; height:5px; border:1px solid var(--slate-600); border-radius:50%; }
+    .services-spotlight:hover .svc-panel:hover .svc-features li::before { border-color:var(--accent); background:var(--accent); }
+
+    /* Process */
+    .process { background:var(--navy); border-top:1px solid var(--stroke); transition:background .35s ease; }
+    .process-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+    .step { text-align:left; padding:2.5rem 2rem; border-right:1px solid var(--stroke); position:relative; }
+    .step:last-child { border-right:none; }
+    .step-num { font-family:var(--font-heading); font-size:3.5rem; font-weight:300; color:var(--navy-light); margin-bottom:1.5rem; line-height:1; letter-spacing:.05em; transition:color .35s ease; }
+    .step h4 { font-size:1.1rem; color:var(--white); margin-bottom:.5rem; }
+    .step p { font-size:.85rem; color:var(--slate-500); line-height:1.7; text-transform:none; letter-spacing:0; }
+
+    /* Testimonials */
+    .testimonials { background:var(--navy-soft); border-top:1px solid var(--stroke); transition:background .35s ease; }
+    .testi-track { display:flex; gap:0; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:1rem; scrollbar-width:thin; scrollbar-color:var(--slate-700) transparent; }
+    .testi-track::-webkit-scrollbar { height:2px; }
+    .testi-track::-webkit-scrollbar-thumb { background:var(--accent); }
+    .testi-card { flex:0 0 380px; scroll-snap-align:start; border:1px solid var(--stroke); margin-left:-1px; padding:2.5rem; transition:background var(--transition),border-color var(--transition); }
+    .testi-card:hover { background:var(--navy-card); border-color:var(--stroke-hover); }
+    .testi-stars { color:var(--accent); font-size:.8rem; margin-bottom:1rem; letter-spacing:3px; transition:color .35s ease; }
+    .testi-card blockquote { font-size:.92rem; line-height:1.8; margin-bottom:1.5rem; font-style:normal; color:var(--slate-300); text-transform:none; letter-spacing:0; }
+    .testi-author { display:flex; align-items:center; gap:.75rem; }
+    .testi-avatar { width:40px; height:40px; border:1px solid var(--accent-dim); display:flex; align-items:center; justify-content:center; font-family:var(--font-heading); font-weight:700; font-size:.85rem; color:var(--accent); letter-spacing:.05em; transition:color .35s ease,border-color .35s ease; }
+    .testi-name { font-family:var(--font-heading); font-weight:700; font-size:.88rem; color:var(--white); letter-spacing:.05em; }
+    .testi-role { font-size:.75rem; color:var(--slate-600); text-transform:none; letter-spacing:0; }
+
+    /* FAQ */
+    .faq { background:var(--navy); border-top:1px solid var(--stroke); transition:background .35s ease; }
+    .faq-list { max-width:740px; margin:0 auto; display:flex; flex-direction:column; gap:0; }
+    .faq-item { border:1px solid var(--stroke); margin-top:-1px; transition:border-color var(--transition); }
+    .faq-item.open { border-color:var(--stroke-hover); }
+    .faq-q { width:100%; text-align:left; padding:1.25rem 1.5rem; background:none; border:none; cursor:none; font-family:var(--font-heading); font-size:.95rem; font-weight:600; color:var(--slate-300); display:flex; align-items:center; justify-content:space-between; transition:color var(--transition); letter-spacing:.04em; text-transform:var(--heading-transform); }
+    .faq-q:hover { color:var(--accent); }
+    .faq-icon { width:24px; height:24px; border:1px solid var(--slate-700); display:flex; align-items:center; justify-content:center; transition:transform var(--transition),border-color var(--transition),color var(--transition); flex-shrink:0; font-size:.8rem; color:var(--slate-500); }
+    .faq-item.open .faq-icon { transform:rotate(45deg); border-color:var(--accent); color:var(--accent); }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height .4s ease; }
+    .faq-a-inner { padding:0 1.5rem 1.25rem; font-size:.88rem; color:var(--slate-500); line-height:1.8; text-transform:none; letter-spacing:0; }
+
+    /* CTA */
+    .cta-banner { background:var(--navy-soft); padding:6rem 0; text-align:center; border-top:1px solid var(--stroke); border-bottom:1px solid var(--stroke); position:relative; overflow:hidden; transition:background .35s ease; }
+    .cta-banner::before { content:''; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:500px; height:500px; background:radial-gradient(circle,var(--accent-glow),transparent 70%); pointer-events:none; }
+    .cta-banner h2 { font-size:clamp(2.2rem,4.5vw,3.5rem); margin-bottom:1rem; }
+    .cta-banner h2 strong { color:var(--accent); transition:color .35s ease; }
+    .cta-banner p { color:var(--slate-500); max-width:480px; margin:0 auto 2.5rem; text-transform:none; letter-spacing:0; }
+
+    /* Contact */
+    .contact { background:var(--navy); border-top:1px solid var(--stroke); transition:background .35s ease; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1.1fr; gap:0; align-items:stretch; }
+    .contact-card { background:var(--navy-soft); border:1px solid var(--stroke); color:var(--slate-300); padding:3rem; transition:background .35s ease; }
+    .contact-card h3 { font-size:1.8rem; margin-bottom:1rem; }
+    .contact-card > p { color:var(--slate-500); margin-bottom:2rem; text-transform:none; letter-spacing:0; }
+    .c-row { display:flex; align-items:flex-start; gap:1rem; margin-bottom:1.5rem; }
+    .c-icon { width:40px; height:40px; border:1px solid var(--stroke); flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:1rem; color:var(--accent); transition:color .35s ease; }
+    .c-row strong { display:block; font-family:var(--font-heading); font-size:.88rem; margin-bottom:.15rem; color:var(--white); letter-spacing:.05em; text-transform:var(--heading-transform); font-weight:600; }
+    .c-row span { font-size:.82rem; color:var(--slate-500); text-transform:none; letter-spacing:0; }
+    .contact-form { background:var(--navy-card); border:1px solid var(--stroke); border-left:none; padding:3rem; transition:background .35s ease; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .field { margin-bottom:1.25rem; }
+    .field label { display:block; font-family:var(--font-heading); font-size:.78rem; font-weight:700; color:var(--slate-400); margin-bottom:.4rem; text-transform:var(--heading-transform); letter-spacing:.12em; }
+    .field input,.field textarea,.field select { width:100%; padding:.75rem 1rem; border:1px solid var(--stroke); background:var(--navy); font-family:inherit; font-size:.88rem; color:var(--white); transition:border-color var(--transition),background .35s ease,color .35s ease; }
+    .field input:focus,.field textarea:focus,.field select:focus { outline:none; border-color:var(--accent); }
+    .field select { appearance:none; cursor:none; }
+    .field textarea { resize:vertical; min-height:100px; }
+    .form-note { font-size:.75rem; color:var(--slate-600); margin-bottom:1.5rem; text-transform:none; letter-spacing:0; }
+
+    /* Footer */
+    footer { background:var(--navy); border-top:1px solid var(--stroke); color:var(--slate-500); padding:4rem 0 2rem; transition:background .35s ease; }
+    .footer-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:2rem; margin-bottom:3rem; }
+    .footer-brand { font-family:var(--font-heading); font-size:1.2rem; font-weight:700; color:var(--pure-white); margin-bottom:.75rem; display:flex; align-items:center; gap:.5rem; letter-spacing:.12em; text-transform:var(--heading-transform); transition:color .35s ease; }
+    .footer-brand .thin { font-weight:400; color:var(--slate-500); transition:color .35s ease; }
+    footer h4 { font-size:.82rem; color:var(--slate-300); margin-bottom:1rem; }
+    footer a { color:var(--slate-600); text-decoration:none; font-size:.85rem; transition:color var(--transition); text-transform:none; letter-spacing:0; }
+    footer a:hover { color:var(--accent); }
+    .footer-links { display:flex; flex-direction:column; gap:.6rem; }
+    .footer-bar { border-top:1px solid var(--stroke); padding-top:1.5rem; display:flex; justify-content:space-between; align-items:center; font-size:.78rem; color:var(--slate-600); }
+    .footer-socials { display:flex; gap:.75rem; }
+    .footer-socials a { width:32px; height:32px; border:1px solid var(--stroke); display:flex; align-items:center; justify-content:center; font-size:.8rem; color:var(--slate-500); transition:all var(--transition); font-family:var(--font-heading); font-weight:700; letter-spacing:0; text-transform:none; }
+    .footer-socials a:hover { border-color:var(--accent); color:var(--accent); }
+
+    /* Back to top + cursor toggle */
+    .back-top { position:fixed; bottom:2rem; right:2rem; z-index:90; width:40px; height:40px; border:1px solid var(--stroke); background:var(--navy); color:var(--slate-400); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transform:translateY(12px); transition:all .3s; cursor:none; font-size:.85rem; }
+    .back-top.show { opacity:1; visibility:visible; transform:translateY(0); }
+    .back-top:hover { border-color:var(--accent); color:var(--accent); }
+    .cursor-toggle { position:fixed; bottom:2rem; left:2rem; z-index:90; width:40px; height:40px; border:1px solid var(--stroke); background:var(--navy); color:var(--slate-500); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transform:translateY(12px); transition:all .3s; cursor:none; font-size:.75rem; font-family:var(--font-heading); font-weight:700; letter-spacing:.05em; }
+    .cursor-toggle.show { opacity:1; visibility:visible; transform:translateY(0); }
+    .cursor-toggle:hover { border-color:var(--accent); color:var(--accent); }
+    .cursor-toggle[aria-pressed="true"] { background:var(--accent); color:var(--navy); border-color:var(--accent); cursor:auto; }
+
+    /* ========== THEME PICKER ========== */
+    .theme-picker { position:fixed; bottom:2rem; left:5rem; z-index:95; }
+    .theme-picker-btn { width:40px; height:40px; border:1px solid var(--stroke); background:var(--navy); color:var(--slate-400); display:flex; align-items:center; justify-content:center; cursor:none; transition:all .3s; font-size:1.1rem; opacity:0; visibility:hidden; transform:translateY(12px); }
+    .theme-picker-btn.show { opacity:1; visibility:visible; transform:translateY(0); }
+    .theme-picker-btn:hover { border-color:var(--accent); color:var(--accent); }
+    .theme-picker-btn.active { border-color:var(--accent); color:var(--accent); }
+
+    .theme-panel { position:absolute; bottom:52px; left:50%; transform:translateX(-50%) translateY(8px); width:340px; background:var(--navy-card); border:1px solid var(--stroke-hover); padding:1rem; opacity:0; visibility:hidden; transition:all .3s ease; pointer-events:none; }
+    .theme-panel.open { opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); pointer-events:auto; }
+    .theme-panel-title { font-family:var(--font-heading); font-size:.7rem; font-weight:700; color:var(--slate-500); letter-spacing:.2em; text-transform:var(--heading-transform); margin-bottom:.75rem; text-align:center; }
+    .theme-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+    .theme-swatch { background:none; border:2px solid transparent; padding:8px 4px 6px; cursor:none; display:flex; flex-direction:column; align-items:center; gap:6px; transition:all .25s ease; }
+    .theme-swatch:hover { border-color:var(--stroke-hover); }
+    .theme-swatch.active { border-color:var(--accent); }
+    .swatch-preview { width:36px; height:36px; border-radius:50%; position:relative; border:2px solid rgba(255,255,255,.1); }
+    .swatch-dot { width:12px; height:12px; border-radius:50%; position:absolute; bottom:-2px; right:-2px; border:2px solid; }
+    .swatch-label { font-family:var(--font-heading); font-size:.6rem; font-weight:600; color:var(--slate-500); letter-spacing:.08em; text-transform:var(--heading-transform); white-space:nowrap; }
+    .theme-swatch.active .swatch-label { color:var(--accent); }
+
+    /* Theme badge */
+    .theme-badge { position:fixed; top:1rem; right:1rem; z-index:100; background:var(--navy-card); color:var(--slate-500); font-family:var(--font-heading); font-size:.65rem; font-weight:700; padding:.35rem .75rem; border:1px solid var(--stroke); letter-spacing:.15em; text-transform:var(--heading-transform); transition:background .35s ease,color .35s ease; }
+
+    /* ========== JOURNEY VISUAL: Stillness → Awareness → Clarity ========== */
+    .journey { background:var(--navy); border-top:1px solid var(--stroke); border-bottom:1px solid var(--stroke); padding:6rem 0; position:relative; overflow:hidden; transition:background .35s ease; }
+    .journey::before { content:''; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:800px; height:400px; background:radial-gradient(ellipse,var(--accent-glow),transparent 70%); pointer-events:none; }
+    .journey-track { display:flex; align-items:stretch; gap:0; position:relative; }
+    .journey-stage { flex:1; padding:2.5rem 2rem; text-align:center; position:relative; border:1px solid var(--stroke); margin-left:-1px; transition:background .35s ease,border-color var(--transition); }
+    .journey-stage:first-child { margin-left:0; }
+    .journey-stage:hover { background:var(--navy-card); border-color:var(--stroke-hover); }
+    .journey-icon { width:72px; height:72px; margin:0 auto 1.5rem; border:1px solid var(--stroke); border-radius:50%; display:flex; align-items:center; justify-content:center; transition:border-color .35s ease,box-shadow .35s ease; }
+    .journey-stage:hover .journey-icon { border-color:var(--accent); box-shadow:0 0 30px var(--accent-glow); }
+    .journey-icon svg { width:32px; height:32px; }
+    .journey-stage h3 { font-size:1.2rem; margin-bottom:.5rem; }
+    .journey-stage .journey-sub { font-family:var(--font-heading); font-size:.7rem; font-weight:600; color:var(--accent); letter-spacing:.2em; text-transform:var(--heading-transform); margin-bottom:1rem; transition:color .35s ease; }
+    .journey-stage p { font-size:.88rem; color:var(--slate-500); line-height:1.7; text-transform:none; letter-spacing:0; }
+    /* Connector arrows between stages */
+    .journey-arrow { flex:0 0 48px; display:flex; align-items:center; justify-content:center; color:var(--accent); font-size:1.4rem; transition:color .35s ease; }
+    .journey-arrow svg { width:28px; height:28px; opacity:.5; }
+
+    /* ========== PROBLEMS I SOLVE ========== */
+    .problems { background:var(--navy-soft); border-top:1px solid var(--stroke); padding:8rem 0; transition:background .35s ease; }
+    .problems-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; }
+    .problem-card {
+      position:relative; padding:2.5rem 2rem; border:1px solid var(--stroke); margin-left:-1px;
+      background:var(--navy); display:flex; flex-direction:column;
+      transition:background var(--transition),border-color var(--transition),transform .5s cubic-bezier(.22,1,.36,1);
+      overflow:hidden; min-height:480px;
+    }
+    .problem-card:first-child { margin-left:0; }
+    .problem-card::before {
+      content:''; position:absolute; top:0; left:0; width:100%; height:2px;
+      background:var(--accent); transform:scaleX(0); transform-origin:left;
+      transition:transform .5s cubic-bezier(.22,1,.36,1),background .35s ease;
+    }
+    .problem-card:hover { background:var(--navy-card); border-color:var(--stroke-hover); }
+    .problem-card:hover::before { transform:scaleX(1); }
+    .problem-card-icon { width:56px; height:56px; border:1px solid var(--stroke); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem; transition:border-color .35s ease; }
+    .problem-card:hover .problem-card-icon { border-color:var(--accent); }
+    .problem-card-icon svg { width:24px; height:24px; }
+    .problem-card-num { font-family:var(--font-heading); font-size:4rem; font-weight:300; color:var(--navy-light); line-height:1; margin-bottom:auto; transition:color .35s ease; }
+    .problem-card:hover .problem-card-num { color:var(--slate-700); }
+    .problem-card h3 { font-size:1.4rem; margin-bottom:.75rem; }
+    .problem-card > p { font-size:.88rem; color:var(--slate-500); margin-bottom:1.25rem; line-height:1.7; text-transform:none; letter-spacing:0; }
+    .problem-list { list-style:none; display:flex; flex-direction:column; gap:.5rem; }
+    .problem-list li { padding:.35rem 0; padding-left:1.4rem; font-size:.82rem; color:var(--slate-400); position:relative; line-height:1.6; text-transform:none; letter-spacing:0; }
+    .problem-list li::before { content:''; position:absolute; left:0; top:.5rem; width:6px; height:6px; border:1px solid var(--slate-600); border-radius:50%; transition:border-color .35s ease,background .35s ease; }
+    .problem-card:hover .problem-list li::before { border-color:var(--accent); background:var(--accent); }
+
+    /* ========== CREDENTIALS BAR ========== */
+    .cred-bar { padding:2.5rem 0; border-bottom:1px solid var(--stroke); }
+    .cred-grid { display:flex; justify-content:center; gap:3rem; flex-wrap:wrap; }
+    .cred-item { text-align:center; }
+    .cred-num { font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); line-height:1; transition:color .35s ease; }
+    .cred-label { font-family:var(--font-heading); font-size:.6rem; font-weight:600; color:var(--slate-600); margin-top:.3rem; text-transform:var(--heading-transform); letter-spacing:.12em; }
+
+    /* ========== ORBIT MODEL (expanded) ========== */
+    .orbit-model { background:var(--navy-soft); border-top:1px solid var(--stroke); padding:8rem 0; transition:background .35s ease; }
+    .orbit-tagline { font-family:var(--font-serif); font-size:1.1rem; font-style:italic; color:var(--accent); text-align:center; margin-top:1.5rem; opacity:.7; }
+    .orbit-flow { display:flex; align-items:center; justify-content:center; gap:.5rem; padding:2rem 0; flex-wrap:wrap; }
+    .orbit-flow-letter { font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--accent); width:55px; height:55px; display:flex; align-items:center; justify-content:center; border:1px solid var(--stroke); background:var(--navy); text-decoration:none; transition:all .4s ease; }
+    .orbit-flow-letter:hover { background:var(--navy-card); border-color:var(--stroke-hover); transform:translateY(-3px); }
+    .orbit-flow-arrow { font-size:1.1rem; color:var(--accent); opacity:.25; }
+    /* Logo + notes grid */
+    .orbit-logo-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; margin:3rem 0; }
+    .orbit-logo-visual { display:flex; align-items:center; justify-content:center; }
+    .orbit-logo-visual svg { max-width:100%; height:auto; }
+    .orbit-logo-notes { display:flex; flex-direction:column; gap:1.25rem; }
+    .orbit-logo-note { display:flex; gap:1rem; align-items:flex-start; }
+    .orbit-logo-note .oln-dot { width:10px; height:10px; border-radius:50%; background:var(--accent); flex-shrink:0; margin-top:6px; }
+    .orbit-logo-note h4 { font-size:.78rem; text-transform:var(--heading-transform); letter-spacing:.06em; margin-bottom:.2rem; }
+    .orbit-logo-note p { font-size:.82rem; color:var(--slate-500); line-height:1.7; text-transform:none; letter-spacing:0; }
+    /* Full ORBIT steps */
+    .orbit-method-step { display:grid; grid-template-columns:90px 1fr; gap:2rem; align-items:start; padding:2.5rem 0; border-bottom:1px solid var(--stroke); }
+    .orbit-method-step:last-of-type { border-bottom:none; }
+    .orbit-big-letter { font-family:var(--font-heading); font-size:4rem; font-weight:700; color:var(--accent); line-height:1; opacity:.2; text-align:center; transition:opacity var(--transition),color .35s ease; }
+    .orbit-big-letter.lit { opacity:.5; }
+    .orbit-method-step:hover .orbit-big-letter { opacity:.5; }
+    .orbit-method-body h4 { font-family:var(--font-heading); font-size:1.05rem; font-weight:700; text-transform:var(--heading-transform); letter-spacing:.06em; margin-bottom:.35rem; }
+    .orbit-method-body .orbit-one-liner { font-family:var(--font-serif); font-size:.92rem; font-style:italic; color:var(--accent); margin-bottom:.75rem; opacity:.65; }
+    .orbit-method-body p { font-size:.85rem; color:var(--slate-500); line-height:1.8; text-transform:none; letter-spacing:0; }
+    .orbit-in-practice { margin-top:1rem; padding:1rem 1.25rem; background:var(--navy-card); border-left:2px solid var(--accent); transition:background .35s ease; }
+    .orbit-in-practice strong { font-family:var(--font-heading); font-size:.68rem; letter-spacing:.1em; text-transform:var(--heading-transform); color:var(--accent); display:block; margin-bottom:.3rem; }
+    .orbit-in-practice span { font-size:.82rem; color:var(--slate-500); line-height:1.7; }
+    /* Session phase cards */
+    .orbit-session-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-top:2rem; }
+    .orbit-session-card { padding:1.5rem; border:1px solid var(--stroke); background:var(--navy); text-align:center; transition:all .3s ease; }
+    .orbit-session-card:hover { border-color:var(--stroke-hover); background:var(--navy-card); transform:translateY(-2px); }
+    .orbit-session-card .osc-num { font-family:var(--font-heading); font-size:1.5rem; font-weight:700; color:var(--accent); opacity:.3; margin-bottom:.4rem; }
+    .orbit-session-card h4 { font-size:.82rem; text-transform:var(--heading-transform); letter-spacing:.06em; margin-bottom:.4rem; }
+    .orbit-session-card p { font-size:.8rem; color:var(--slate-500); line-height:1.6; text-transform:none; letter-spacing:0; }
+    .orbit-quote-block { padding:2.5rem; background:var(--navy-card); border:1px solid var(--stroke); text-align:center; margin:3rem 0; transition:background .35s ease,border-color .35s ease; }
+    .orbit-quote-block blockquote { font-family:var(--font-serif); font-size:1.05rem; color:var(--slate-300); font-style:italic; line-height:1.8; max-width:560px; margin:0 auto; }
+
+    /* ========== WHO I WORK WITH ========== */
+    .who { background:var(--navy); border-top:1px solid var(--stroke); padding:7rem 0; transition:background .35s ease; }
+    .who-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-bottom:3rem; }
+    .who-card { padding:2.5rem 2rem; border:1px solid var(--stroke); background:var(--navy); transition:background var(--transition),border-color var(--transition); }
+    .who-card:hover { background:var(--navy-card); border-color:var(--stroke-hover); }
+    .who-card h4 { font-size:1.05rem; margin-bottom:.5rem; }
+    .who-card p { font-size:.85rem; color:var(--slate-500); line-height:1.7; text-transform:none; letter-spacing:0; }
+    .who-not { max-width:700px; margin:0 auto; padding:2rem; border:1px solid var(--stroke); background:var(--navy-soft); text-align:center; transition:background .35s ease; }
+    .who-not h4 { font-size:.95rem; margin-bottom:.75rem; color:var(--accent); transition:color .35s ease; }
+    .who-not p { font-size:.84rem; color:var(--slate-500); line-height:1.7; text-transform:none; letter-spacing:0; }
+
+    /* ========== ENGAGEMENT / LOGISTICS ========== */
+    .engagement { background:var(--navy-soft); border-top:1px solid var(--stroke); padding:7rem 0; transition:background .35s ease; }
+    .engage-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-bottom:2rem; }
+    .engage-item { padding:2rem 1.5rem; border:1px solid var(--stroke); margin-left:-1px; background:var(--navy); text-align:center; transition:background var(--transition),border-color var(--transition); }
+    .engage-item:first-child { margin-left:0; }
+    .engage-item:hover { background:var(--navy-card); border-color:var(--stroke-hover); }
+    .engage-icon { font-size:1.6rem; color:var(--accent); margin-bottom:.75rem; transition:color .35s ease; }
+    .engage-item h4 { font-size:.95rem; margin-bottom:.4rem; }
+    .engage-item p { font-size:.82rem; color:var(--slate-500); line-height:1.6; text-transform:none; letter-spacing:0; }
+    .confidentiality { max-width:700px; margin:0 auto; padding:2rem; border:1px solid var(--stroke); background:var(--navy); text-align:center; transition:background .35s ease; }
+    .confidentiality h4 { font-size:.9rem; margin-bottom:.5rem; }
+    .confidentiality p { font-size:.82rem; color:var(--slate-500); line-height:1.7; text-transform:none; letter-spacing:0; }
+
+    /* ========== AI POSITIONING ========== */
+    .ai-section { background:var(--navy); border-top:1px solid var(--stroke); padding:7rem 0; transition:background .35s ease; }
+    .ai-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+    .ai-visual { position:relative; border:1px solid var(--stroke); padding:3rem; background:var(--navy-soft); min-height:300px; display:flex; align-items:center; justify-content:center; transition:background .35s ease; }
+    .ai-visual::before { content:''; position:absolute; top:-1px; left:0; width:60px; height:2px; background:var(--accent); transition:background .35s ease; }
+    .ai-points { list-style:none; display:flex; flex-direction:column; gap:.75rem; margin-top:1.5rem; }
+    .ai-points li { padding:.35rem 0; padding-left:1.4rem; font-size:.84rem; color:var(--slate-400); position:relative; line-height:1.6; text-transform:none; letter-spacing:0; }
+    .ai-points li::before { content:''; position:absolute; left:0; top:.5rem; width:6px; height:6px; border:1px solid var(--slate-600); border-radius:50%; transition:border-color .35s ease; }
+
+    /* ========== RESPONSIVE ========== */
+    @media(max-width:1024px){
+      .hamburger{display:flex;}
+      .nav-links,.nav .btn{display:none;}
+      .hero-inner{grid-template-columns:1fr;text-align:center;}
+      .hero-sub{margin-inline:auto;}
+      .hero-buttons{justify-content:center;}
+      .orbital-vis{max-width:280px;margin:0 auto;}
+      .philosophy-grid{grid-template-columns:1fr;gap:2.5rem;}
+      .services-spotlight{grid-template-columns:1fr 1fr;}
+      .svc-panel{min-height:auto;}
+      .process-steps{grid-template-columns:1fr 1fr;}
+      .step{border-bottom:1px solid var(--stroke);}
+      .stats-row{grid-template-columns:repeat(2,1fr);}
+      .stat-item:nth-child(2){border-right:none;}
+      .contact-grid{grid-template-columns:1fr;}
+      .contact-form{border-left:1px solid var(--stroke);border-top:none;}
+      .footer-grid{grid-template-columns:1fr 1fr;}
+      .journey-track{flex-direction:column;}
+      .journey-arrow{transform:rotate(90deg);flex:0 0 36px;}
+      .journey-stage{margin-left:0;}
+      .problems-grid{grid-template-columns:1fr 1fr;}
+      .problem-card{min-height:auto;margin-left:0;}
+      .orbit-logo-grid{grid-template-columns:1fr;}
+      .orbit-method-step{grid-template-columns:60px 1fr;gap:1.5rem;}
+      .orbit-big-letter{font-size:3rem;}
+      .orbit-session-grid{grid-template-columns:1fr 1fr;}
+      .who-grid{grid-template-columns:1fr 1fr;}
+      .engage-grid{grid-template-columns:1fr 1fr;}
+      .engage-item{margin-left:0;}
+      .ai-grid{grid-template-columns:1fr;}
+    }
+    @media(max-width:640px){
+      .services-spotlight{grid-template-columns:1fr;}
+      .problems-grid{grid-template-columns:1fr;}
+      .orbit-method-step{grid-template-columns:50px 1fr;gap:1rem;}
+      .orbit-big-letter{font-size:2.5rem;}
+      .orbit-session-grid{grid-template-columns:1fr;}
+      .orbit-flow-letter{width:42px;height:42px;font-size:1.5rem;}
+      .who-grid{grid-template-columns:1fr;}
+      .engage-grid{grid-template-columns:1fr;}
+      .process-steps{grid-template-columns:1fr;}
+      .stats-row{grid-template-columns:1fr 1fr;}
+      .form-row{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr;}
+      .testi-card{flex:0 0 300px;}
+      .theme-panel{width:280px;}
+    }
+  </style>
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-spiral">
+    <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-logo>
+      <circle cx="109" cy="107" r="5" data-lp/>
+      <path d="M 109.2,106.9 A 3.5,3.5 0 0 1 112.7,110.4 A 3.9,3.9 0 0 1 108.8,114.3 A 4.5,4.5 0 0 1 104.3,109.9 A 5.0,5.0 0 0 1 109.3,104.9 A 5.7,5.7 0 0 1 115.0,110.5 A 6.4,6.4 0 0 1 108.6,116.9 A 7.2,7.2 0 0 1 101.4,109.7 A 8.1,8.1 0 0 1 109.5,101.6 A 9.2,9.2 0 0 1 118.7,110.8 A 10.3,10.3 0 0 1 108.4,121.1 A 11.7,11.7 0 0 1 96.7,109.4 A 13.1,13.1 0 0 1 109.9,96.3 A 14.8,14.8 0 0 1 124.7,111.1 A 16.7,16.7 0 0 1 108.0,127.8 A 18.9,18.9 0 0 1 89.1,109.0 A 21.3,21.3 0 0 1 110.4,87.7 A 24.0,24.0 0 0 1 134.4,111.7 A 27.1,27.1 0 0 1 107.3,138.8 A 30.5,30.5 0 0 1 76.8,108.2 A 34.4,34.4 0 0 1 111.2,73.8 A 38.8,38.8 0 0 1 150.0,112.6 A 43.8,43.8 0 0 1 106.2,156.4 A 49.4,49.4 0 0 1 56.9,107.0 A 55.7,55.7 0 0 1 112.6,51.4 A 62.8,62.8 0 0 1 175.4,114.2 A 70.8,70.8 0 0 1 104.5,185.0 A 79.9,79.9 0 0 1 24.6,105.1 A 90.1,90.1 0 0 1 114.7,15.0"
+            fill="none" stroke-width="2.5" stroke-linecap="round" opacity=".6" data-ls/>
+      <path d="M 114.7,15.0 A 100,100 0 0 1 165,28" fill="none" stroke-width="2.5" stroke-linecap="round" data-le/>
+      <circle cx="165" cy="28" r="6" data-lt/>
+    </svg>
+  </div>
+  <div class="loader-text">Orbital Catalyst&trade;</div>
+</div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="theme-badge">v17 &mdash; <span id="themeBadgeLabel">Electric</span></div>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand">
+      <svg width="32" height="32" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-logo>
+        <circle cx="109" cy="107" r="5" data-lp/>
+        <path d="M 109.2,106.9 A 3.5,3.5 0 0 1 112.7,110.4 A 3.9,3.9 0 0 1 108.8,114.3 A 4.5,4.5 0 0 1 104.3,109.9 A 5.0,5.0 0 0 1 109.3,104.9 A 5.7,5.7 0 0 1 115.0,110.5 A 6.4,6.4 0 0 1 108.6,116.9 A 7.2,7.2 0 0 1 101.4,109.7 A 8.1,8.1 0 0 1 109.5,101.6 A 9.2,9.2 0 0 1 118.7,110.8 A 10.3,10.3 0 0 1 108.4,121.1 A 11.7,11.7 0 0 1 96.7,109.4 A 13.1,13.1 0 0 1 109.9,96.3 A 14.8,14.8 0 0 1 124.7,111.1 A 16.7,16.7 0 0 1 108.0,127.8 A 18.9,18.9 0 0 1 89.1,109.0 A 21.3,21.3 0 0 1 110.4,87.7 A 24.0,24.0 0 0 1 134.4,111.7 A 27.1,27.1 0 0 1 107.3,138.8 A 30.5,30.5 0 0 1 76.8,108.2 A 34.4,34.4 0 0 1 111.2,73.8 A 38.8,38.8 0 0 1 150.0,112.6 A 43.8,43.8 0 0 1 106.2,156.4 A 49.4,49.4 0 0 1 56.9,107.0 A 55.7,55.7 0 0 1 112.6,51.4 A 62.8,62.8 0 0 1 175.4,114.2 A 70.8,70.8 0 0 1 104.5,185.0 A 79.9,79.9 0 0 1 24.6,105.1 A 90.1,90.1 0 0 1 114.7,15.0"
+              fill="none" stroke-width="3" stroke-linecap="round" data-ls/>
+        <path d="M 114.7,15.0 A 100,100 0 0 1 165,28" fill="none" stroke-width="3" stroke-linecap="round" data-le/>
+        <circle cx="165" cy="28" r="7" data-lt/>
+      </svg>
+      Orbital<span class="thin">Catalyst</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#orbit-model">ORBIT&trade;</a></li>
+      <li><a href="#who">Who I Coach</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="https://cal.com/orbitalcatalyst" target="_blank" rel="noopener" class="btn btn-accent">Book a Call</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#journey" onclick="closeMenu()">Journey</a>
+  <a href="#orbit-model" onclick="closeMenu()">ORBIT&trade; Model</a>
+  <a href="#who" onclick="closeMenu()">Who I Coach</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="https://cal.com/orbitalcatalyst" target="_blank" rel="noopener" onclick="closeMenu()">Book a Call</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid" aria-hidden="true">
+    <div class="h-line" style="top:25%"></div>
+    <div class="h-line" style="top:50%"></div>
+    <div class="h-line" style="top:75%"></div>
+    <div class="v-line" style="left:25%"></div>
+    <div class="v-line" style="left:50%"></div>
+    <div class="v-line" style="left:75%"></div>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Vikas Sharma &middot; Orbital Catalyst&trade;</div>
+      <h1>I coach technology leaders toward <em>true transformation</em></h1>
+      <p class="hero-sub">23 years inside technology. Six industry domains. Two continents. Now I help leaders dissolve the invisible barriers between where they are and who they truly are.</p>
+      <div class="hero-buttons">
+        <a href="https://cal.com/orbitalcatalyst" target="_blank" rel="noopener" class="btn btn-accent">Book a Discovery Call</a>
+        <a href="#orbit-model" class="btn btn-outline">Explore the ORBIT&trade; Model</a>
+      </div>
+    </div>
+    <div class="orbital-vis">
+      <div class="orbit"><div class="orbit-dot"></div></div>
+      <div class="orbit"><div class="orbit-dot"></div></div>
+      <div class="orbit"><div class="orbit-dot"></div></div>
+      <div class="orbital-core">
+        <svg class="oc-logo oc-logo-animated" width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-logo>
+          <circle cx="109" cy="107" r="5" data-lp/>
+          <path d="M 109.2,106.9 A 3.5,3.5 0 0 1 112.7,110.4 A 3.9,3.9 0 0 1 108.8,114.3 A 4.5,4.5 0 0 1 104.3,109.9 A 5.0,5.0 0 0 1 109.3,104.9 A 5.7,5.7 0 0 1 115.0,110.5 A 6.4,6.4 0 0 1 108.6,116.9 A 7.2,7.2 0 0 1 101.4,109.7 A 8.1,8.1 0 0 1 109.5,101.6 A 9.2,9.2 0 0 1 118.7,110.8 A 10.3,10.3 0 0 1 108.4,121.1 A 11.7,11.7 0 0 1 96.7,109.4 A 13.1,13.1 0 0 1 109.9,96.3 A 14.8,14.8 0 0 1 124.7,111.1 A 16.7,16.7 0 0 1 108.0,127.8 A 18.9,18.9 0 0 1 89.1,109.0 A 21.3,21.3 0 0 1 110.4,87.7 A 24.0,24.0 0 0 1 134.4,111.7 A 27.1,27.1 0 0 1 107.3,138.8 A 30.5,30.5 0 0 1 76.8,108.2 A 34.4,34.4 0 0 1 111.2,73.8 A 38.8,38.8 0 0 1 150.0,112.6 A 43.8,43.8 0 0 1 106.2,156.4 A 49.4,49.4 0 0 1 56.9,107.0 A 55.7,55.7 0 0 1 112.6,51.4 A 62.8,62.8 0 0 1 175.4,114.2 A 70.8,70.8 0 0 1 104.5,185.0 A 79.9,79.9 0 0 1 24.6,105.1 A 90.1,90.1 0 0 1 114.7,15.0"
+                fill="none" stroke-width="2" stroke-linecap="round" data-ls/>
+          <path d="M 114.7,15.0 A 100,100 0 0 1 165,28" fill="none" stroke-width="2" stroke-linecap="round" data-le/>
+          <circle class="oc-sat-pulse" cx="165" cy="28" r="5" opacity=".85" data-lt/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-mouse"></div>Scroll</div>
+</section>
+
+<!-- ===== CREDENTIAL BADGES ===== -->
+<div class="cred-bar">
+  <div class="container">
+    <div class="cred-grid">
+      <div class="cred-item"><div class="cred-num">23+</div><div class="cred-label">Years in Tech</div></div>
+      <div class="cred-item"><div class="cred-num">50M+</div><div class="cred-label">Customers Impacted</div></div>
+      <div class="cred-item"><div class="cred-num">250+</div><div class="cred-label">Engineers Led</div></div>
+      <div class="cred-item"><div class="cred-num">6</div><div class="cred-label">Domains</div></div>
+      <div class="cred-item"><div class="cred-num">2</div><div class="cred-label">Continents</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== JOURNEY VISUAL: Stillness → Awareness → Clarity ===== -->
+<section class="journey" id="journey">
+  <div class="container">
+    <div class="centered" style="margin-bottom:3.5rem;">
+      <div class="section-label reveal">01 &mdash; The Inner Arc</div>
+      <h2 class="section-heading reveal">From stillness to <strong>purposeful action</strong></h2>
+      <p class="section-sub reveal">Transformation is not a leap. I walk with you through three stages of deepening awareness.</p>
+    </div>
+    <div class="journey-track">
+
+      <!-- Stage 1: Balance / Stillness -->
+      <div class="journey-stage reveal">
+        <div class="journey-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="12" x2="15" y2="14"/>
+          </svg>
+        </div>
+        <div class="journey-sub">Stage 01</div>
+        <h3>Balance &amp; Stillness</h3>
+        <p>The mind in its natural state is restless &mdash; constantly comparing, judging, planning. The first step is not to fix, but to <em>pause</em>. In stillness, we discover the space between stimulus and response &mdash; and in that space lies the seed of all transformation.</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="journey-arrow reveal" data-delay="1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="14 7 19 12 14 17"/></svg>
+      </div>
+
+      <!-- Stage 2: Perception / Awareness -->
+      <div class="journey-stage reveal" data-delay="1">
+        <div class="journey-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/>
+          </svg>
+        </div>
+        <div class="journey-sub">Stage 02</div>
+        <h3>Perception &amp; Awareness</h3>
+        <p>From stillness arises the capacity to <em>see clearly</em> &mdash; without the distortions of conditioning, fear, or desire. You begin to perceive your own patterns: the stories you repeat, the beliefs you cling to, the reactions that run on autopilot. Awareness itself is the catalyst.</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="journey-arrow reveal" data-delay="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="14 7 19 12 14 17"/></svg>
+      </div>
+
+      <!-- Stage 3: Clarity through Action -->
+      <div class="journey-stage reveal" data-delay="2">
+        <div class="journey-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="journey-sub">Stage 03</div>
+        <h3>Clarity Through Action</h3>
+        <p>Clarity is not passive contemplation &mdash; it is <em>knowing what to do and doing it</em>. When perception is undistorted and the mind is still, action flows naturally. This is not forced willpower; it is intelligent response born from understanding. Right action becomes effortless.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item reveal"><div class="stat-num" data-target="500">0+</div><div class="stat-label">Leaders Coached</div></div>
+      <div class="stat-item reveal" data-delay="1"><div class="stat-num" data-target="2000">0+</div><div class="stat-label">Hours of Coaching</div></div>
+      <div class="stat-item reveal" data-delay="2"><div class="stat-num" data-target="96">0%</div><div class="stat-label">Report Transformation</div></div>
+      <div class="stat-item reveal" data-delay="3"><div class="stat-num" data-target="15">0+</div><div class="stat-label">Years Experience</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROBLEMS I SOLVE ===== -->
+<section class="problems" id="problems">
+  <div class="container">
+    <div class="centered" style="margin-bottom:3.5rem;">
+      <div class="section-label reveal">02 &mdash; Problems I Solve</div>
+      <h2 class="section-heading reveal">The invisible barriers to a <strong>fulfilling life</strong></h2>
+      <p class="section-sub reveal">These are not career problems. They are fundamental human struggles. You may be successful by every external measure, yet feel something essential is missing.</p>
+    </div>
+    <div class="problems-grid">
+
+      <!-- Card 1: Thinking -->
+      <div class="problem-card reveal">
+        <div class="problem-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a7 7 0 0 1 4.5 12.4c-.5.4-.8 1-.8 1.6v2h-7.4v-2c0-.6-.3-1.2-.8-1.6A7 7 0 0 1 12 2z"/>
+            <line x1="10" y1="22" x2="14" y2="22"/>
+            <line x1="9" y1="18" x2="15" y2="18"/>
+          </svg>
+        </div>
+        <div class="problem-card-num">01</div>
+        <h3>The Trap of Thinking</h3>
+        <p>The mind that got you here &mdash; analytical, strategic, relentless &mdash; has become its own prison. Thought creates the very problems it then tries to solve.</p>
+        <ul class="problem-list">
+          <li><strong>Overthinking paralysis</strong> &mdash; trapped in analysis loops, unable to trust your own judgment</li>
+          <li><strong>Identity through intellect</strong> &mdash; confusing who you are with what you think, mistaking opinion for truth</li>
+          <li><strong>The illusion of control</strong> &mdash; believing more thinking will deliver certainty, when certainty was never available</li>
+          <li><strong>Comparison as default mode</strong> &mdash; measuring your inner life against others' external achievements</li>
+          <li><strong>The noise that never stops</strong> &mdash; an internal monologue so constant you've forgotten silence exists</li>
+        </ul>
+      </div>
+
+      <!-- Card 2: Action -->
+      <div class="problem-card reveal" data-delay="1">
+        <div class="problem-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div class="problem-card-num">02</div>
+        <h3>The Disconnect in Action</h3>
+        <p>You act constantly &mdash; yet feel your actions don't express who you truly are. There is a gap between what you do and what you feel called to do.</p>
+        <ul class="problem-list">
+          <li><strong>Achievement without fulfillment</strong> &mdash; reaching every goal but feeling emptier after each one</li>
+          <li><strong>Action driven by fear</strong> &mdash; doing things to avoid failure, judgment, or loss rather than from genuine inspiration</li>
+          <li><strong>Burnout as identity</strong> &mdash; exhaustion worn as proof of worth, mistaking busyness for meaning</li>
+          <li><strong>The courage deficit</strong> &mdash; knowing what you should do but being unable to act on it because the stakes feel too high</li>
+          <li><strong>Scattered energy</strong> &mdash; effort poured in a hundred directions, yet nothing feels truly <em>yours</em></li>
+        </ul>
+      </div>
+
+      <!-- Card 3: Purpose -->
+      <div class="problem-card reveal" data-delay="2">
+        <div class="problem-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="6"/>
+            <circle cx="12" cy="12" r="2"/>
+          </svg>
+        </div>
+        <div class="problem-card-num">03</div>
+        <h3>The Search for Purpose</h3>
+        <p>Somewhere beneath the titles, deliverables, and quarterly targets is a question you've been avoiding: <em>&ldquo;What is this all for?&rdquo;</em></p>
+        <ul class="problem-list">
+          <li><strong>Success without meaning</strong> &mdash; a career that looks perfect from outside but feels hollow within</li>
+          <li><strong>The spiritual void</strong> &mdash; an unnamed longing for something deeper that no promotion or possession satisfies</li>
+          <li><strong>Living someone else's life</strong> &mdash; following a script written by family, culture, or ambition rather than your own truth</li>
+          <li><strong>Fear of the question itself</strong> &mdash; avoiding self-inquiry because what you might discover could unravel everything</li>
+          <li><strong>Fragmented existence</strong> &mdash; a &ldquo;work self&rdquo; and a &ldquo;real self&rdquo; that never meet, leaving you feeling like an actor in your own life</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE ORBIT MODEL (expanded from CoachingModel_Orbit) ===== -->
+<section class="orbit-model" id="orbit-model">
+  <div class="container">
+    <div class="centered" style="margin-bottom:2rem;">
+      <div class="section-label reveal">03 &mdash; The ORBIT&trade; Model</div>
+      <h2 class="section-heading reveal">Where Observation Leads to <strong>Transformation</strong></h2>
+      <p class="section-sub reveal">A five-stage coaching method modelled on the physics of breaking free from a gravitational field. The session-by-session engine of every engagement.</p>
+    </div>
+
+    <div class="orbit-flow reveal">
+      <a href="#orbit-o" class="orbit-flow-letter" style="text-decoration:none;">O</a>
+      <span class="orbit-flow-arrow">&rarr;</span>
+      <a href="#orbit-r" class="orbit-flow-letter" style="text-decoration:none;">R</a>
+      <span class="orbit-flow-arrow">&rarr;</span>
+      <a href="#orbit-b" class="orbit-flow-letter" style="text-decoration:none;">B</a>
+      <span class="orbit-flow-arrow">&rarr;</span>
+      <a href="#orbit-i" class="orbit-flow-letter" style="text-decoration:none;">I</a>
+      <span class="orbit-flow-arrow">&rarr;</span>
+      <a href="#orbit-t" class="orbit-flow-letter" style="text-decoration:none;">T</a>
+    </div>
+
+    <!-- Logo + explanation -->
+    <div class="orbit-logo-grid reveal" style="margin-top:3rem;">
+      <div class="orbit-logo-visual">
+        <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg" width="360" height="360">
+          <circle cx="220" cy="220" r="60" fill="none" stroke="var(--accent)" stroke-width="1" opacity=".06"/>
+          <circle cx="220" cy="220" r="110" fill="none" stroke="var(--accent)" stroke-width="1" opacity=".08"/>
+          <circle cx="220" cy="220" r="160" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="6 4" opacity=".1"/>
+          <circle cx="220" cy="220" r="200" fill="none" stroke="var(--accent)" stroke-width="1" opacity=".05"/>
+          <circle cx="220" cy="220" r="16" fill="var(--navy)"/>
+          <circle cx="220" cy="220" r="16" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".3"/>
+          <circle cx="220" cy="220" r="6" fill="var(--accent)" opacity=".4"/>
+          <path d="M 280,220 A 80,80 0 0 1 220,300 A 130,130 0 0 1 90,220 A 160,160 0 0 1 220,60 A 200,200 0 0 1 420,220" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="8 4" opacity=".25"/>
+          <circle cx="280" cy="220" r="22" fill="var(--navy)" stroke="var(--accent)" stroke-width="1" opacity=".6"/>
+          <text x="280" y="225" text-anchor="middle" fill="var(--accent)" font-family="JetBrains Mono" font-size="15" font-weight="700">O</text>
+          <circle cx="220" cy="300" r="22" fill="var(--navy)" stroke="var(--accent)" stroke-width="1" opacity=".6"/>
+          <text x="220" y="305" text-anchor="middle" fill="var(--accent)" font-family="JetBrains Mono" font-size="15" font-weight="700">R</text>
+          <circle cx="90" cy="220" r="22" fill="var(--navy)" stroke="var(--accent)" stroke-width="1" opacity=".6"/>
+          <text x="90" y="225" text-anchor="middle" fill="var(--accent)" font-family="JetBrains Mono" font-size="15" font-weight="700">B</text>
+          <circle cx="220" cy="60" r="22" fill="var(--navy)" stroke="var(--accent)" stroke-width="1.5" opacity=".7"/>
+          <text x="220" y="65" text-anchor="middle" fill="var(--accent)" font-family="JetBrains Mono" font-size="15" font-weight="700">I</text>
+          <circle cx="412" cy="220" r="24" fill="var(--navy)" stroke="var(--accent)" stroke-width="2" opacity=".8"/>
+          <text x="412" y="225" text-anchor="middle" fill="var(--accent)" font-family="JetBrains Mono" font-size="16" font-weight="700">T</text>
+          <circle cx="412" cy="220" r="32" fill="none" stroke="var(--accent)" stroke-width=".5" opacity=".2"/>
+        </svg>
+      </div>
+      <div class="orbit-logo-notes">
+        <div class="orbit-logo-note">
+          <div class="oln-dot" style="opacity:.3;"></div>
+          <div><h4>The Centre</h4><p>Your current operating system &mdash; the default patterns and assumptions you orbit around. This is the gravitational pull that keeps leaders repeating the same cycles.</p></div>
+        </div>
+        <div class="orbit-logo-note">
+          <div class="oln-dot" style="opacity:.5;"></div>
+          <div><h4>The Spiral Path</h4><p>The Fibonacci golden spiral. Each revolution is wider than the last &mdash; representing expanding perspective. The ORBIT&trade; method operates along this path, widening awareness with each session.</p></div>
+        </div>
+        <div class="orbit-logo-note">
+          <div class="oln-dot" style="opacity:.75;"></div>
+          <div><h4>The Exit Arc</h4><p>The trajectory where the pattern breaks. Not circling anymore &mdash; departing. The moment a leader stops repeating and starts choosing.</p></div>
+        </div>
+        <div class="orbit-logo-note">
+          <div class="oln-dot" style="opacity:1;"></div>
+          <div><h4>The Satellite</h4><p>The leader operating beyond the pull of old defaults. Still connected to everything they have learned. No longer constrained by it. This is the T in ORBIT&trade;.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full ORBIT Method -->
+    <h3 class="section-heading reveal" style="margin-top:4rem;font-size:1.5rem;">The Method</h3>
+    <p class="section-sub reveal" style="margin-bottom:2rem;">Five stages. Each maps to a distinct phase of behavioural change. Each session moves through some or all of them. Over the engagement, they compound.</p>
+
+    <div class="orbit-method-step reveal" id="orbit-o">
+      <div class="orbit-big-letter lit">O</div>
+      <div class="orbit-method-body">
+        <h4>Observe</h4>
+        <p class="orbit-one-liner">Step back from the momentum.</p>
+        <p>Map your current patterns &mdash; the triggers, the default reactions, the assumptions running in the background. See the system you are operating from, without immediately trying to fix it. Most leaders have never done this. They optimise constantly but rarely observe what they are optimising around.</p>
+        <div class="orbit-in-practice"><strong>In Practice</strong><span>What patterns keep showing up across different situations? What do you consistently avoid, deflect, or over-control? What would someone watching you for a week notice that you cannot see?</span></div>
+      </div>
+    </div>
+    <div class="orbit-method-step reveal" id="orbit-r">
+      <div class="orbit-big-letter">R</div>
+      <div class="orbit-method-body">
+        <h4>Recognise</h4>
+        <p class="orbit-one-liner">Separate the pattern from the person.</p>
+        <p>Identify where a behaviour is a learned default versus a conscious choice. Inherited playbooks from past managers. Identity-driven decisions. Fear-based responses dressed up as strategy. The pattern is not you; it is something you learned. That distinction changes everything.</p>
+        <div class="orbit-in-practice"><strong>In Practice</strong><span>Where did this pattern come from? Who taught you this was the right way? What would you lose if you stopped doing it? What would you gain?</span></div>
+      </div>
+    </div>
+    <div class="orbit-method-step reveal" id="orbit-b">
+      <div class="orbit-big-letter">B</div>
+      <div class="orbit-method-body">
+        <h4>Break the Pattern</h4>
+        <p class="orbit-one-liner">Understanding dissolves grip.</p>
+        <p>A pattern loses its power once it is fully understood. This is not about forcing new behaviour through willpower. It is about seeing the old behaviour so clearly &mdash; its origin, its function, its cost &mdash; that it stops running on autopilot. What is truly understood no longer operates unconsciously.</p>
+        <div class="orbit-in-practice"><strong>In Practice</strong><span>Now that you see this pattern clearly, what has already shifted? What decision would you make differently this week if the pattern were not running?</span></div>
+      </div>
+    </div>
+    <div class="orbit-method-step reveal" id="orbit-i">
+      <div class="orbit-big-letter">I</div>
+      <div class="orbit-method-body">
+        <h4>Integrate</h4>
+        <p class="orbit-one-liner">Insight without action is just entertainment.</p>
+        <p>Translate new understanding into new operating habits. Design concrete experiments, test them in real situations, build feedback loops. This is where coaching becomes measurable: specific actions, specific contexts, specific outcomes. Not abstract insight &mdash; applied change with accountability.</p>
+        <div class="orbit-in-practice"><strong>In Practice</strong><span>What is one situation this week where you can operate from this new understanding? What will you do differently? How will you know it worked?</span></div>
+      </div>
+    </div>
+    <div class="orbit-method-step reveal" id="orbit-t">
+      <div class="orbit-big-letter lit">T</div>
+      <div class="orbit-method-body">
+        <h4>Transform</h4>
+        <p class="orbit-one-liner">A new trajectory, not a new trick.</p>
+        <p>The new operating mode holds. Decisions come from clarity, not from old defaults. You have reached escape velocity &mdash; operating from a wider orbit with a fundamentally different decision-making system. This is not a destination. It is a new way of moving &mdash; and the spiral keeps expanding.</p>
+        <div class="orbit-in-practice"><strong>In Practice</strong><span>Looking back at where you started, what has fundamentally changed in how you see, decide, and act? What is now possible that was not before?</span></div>
+      </div>
+    </div>
+
+    <div class="orbit-quote-block reveal">
+      <blockquote>&ldquo;The method mirrors what it teaches. You begin by observing. You end by transforming. And the process itself &mdash; like an orbit &mdash; is a spiral. You revisit each stage at a higher level every time.&rdquo;</blockquote>
+    </div>
+
+    <!-- Session Phases -->
+    <h3 class="section-heading reveal" style="margin-top:3rem;font-size:1.3rem;">How It Unfolds Across Sessions</h3>
+    <div class="orbit-session-grid reveal">
+      <div class="orbit-session-card">
+        <div class="osc-num">01&ndash;03</div>
+        <h4>Mapping</h4>
+        <p>Heavy on <strong>O</strong> and <strong>R</strong>. The first sessions focus on observation and recognition &mdash; mapping the patterns, naming the defaults, building the diagnostic picture.</p>
+      </div>
+      <div class="orbit-session-card">
+        <div class="osc-num">04&ndash;06</div>
+        <h4>Shifting</h4>
+        <p>The <strong>B</strong> and <strong>I</strong> zone. Patterns are challenged, understood, and broken. New actions are designed, tested, and refined. This is where the real work happens.</p>
+      </div>
+      <div class="orbit-session-card">
+        <div class="osc-num">07&ndash;09</div>
+        <h4>Sustaining</h4>
+        <p>Deepening <strong>I</strong> and reaching <strong>T</strong>. Integration becomes natural. The new operating system holds under pressure. The trajectory is set.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PHILOSOPHY ===== -->
+<section class="philosophy" id="philosophy">
+  <div class="container philosophy-grid">
+    <div class="philosophy-visual reveal">
+      <blockquote>&ldquo;The ability to observe without evaluating is the highest form of intelligence.&rdquo;</blockquote>
+      <cite>&mdash; Jiddu Krishnamurti</cite>
+      <div style="margin-top:3rem;">
+        <blockquote>&ldquo;Awareness is the greatest agent for change. The moment you become aware, transformation has already begun.&rdquo;</blockquote>
+        <cite style="display:block;margin-top:.75rem;">&mdash; Osho</cite>
+      </div>
+    </div>
+    <div>
+      <div class="section-label reveal">04 &mdash; The Philosophy</div>
+      <h2 class="section-heading reveal">Ancient wisdom meets <strong>modern coaching</strong></h2>
+      <p class="section-sub reveal">A rigorous, evidence-based approach that draws from ICF-accredited coaching and the contemplative insights of Krishnamurti, Ashtavakra, and Osho.</p>
+      <div class="pillar-list">
+        <div class="pillar reveal" data-delay="1"><div class="pillar-icon">&#9670;</div><div><h4>ICF Competencies</h4><p>Professional coaching standards including active listening, powerful questioning, and creating awareness.</p></div></div>
+        <div class="pillar reveal" data-delay="2"><div class="pillar-icon">&#9711;</div><div><h4>Contemplative Inquiry</h4><p>Self-observation practices drawn from Krishnamurti's teachings on freedom from conditioning.</p></div></div>
+        <div class="pillar reveal" data-delay="3"><div class="pillar-icon">&#9674;</div><div><h4>Mind Block Dissolution</h4><p>Techniques informed by Ashtavakra's insights on witnessing awareness and liberation from limiting patterns.</p></div></div>
+        <div class="pillar reveal" data-delay="4"><div class="pillar-icon">&#10022;</div><div><h4>Holistic Integration</h4><p>Merging professional growth with inner transformation for sustainable, authentic leadership.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHO I WORK WITH ===== -->
+<section class="who" id="who">
+  <div class="container">
+    <div class="centered" style="margin-bottom:3.5rem;">
+      <div class="section-label reveal">05 &mdash; Who I Coach</div>
+      <h2 class="section-heading reveal">Technology leaders ready for <strong>the real work</strong></h2>
+      <p class="section-sub reveal">I work with a specific kind of person. If you recognise yourself here, we should talk.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card reveal">
+        <h4>Senior Tech Leaders</h4>
+        <p>Directors, VPs, CTOs, and Architects who've mastered the technical dimension and now face the human one &mdash; influence without authority, identity beyond expertise, leading through ambiguity.</p>
+      </div>
+      <div class="who-card reveal" data-delay="1">
+        <h4>Founders &amp; Entrepreneurs</h4>
+        <p>Technology founders carrying the weight of vision, execution, and team &mdash; who sense that the next level of growth requires inner clarity, not just better strategy.</p>
+      </div>
+      <div class="who-card reveal" data-delay="2">
+        <h4>The Spiritually Curious</h4>
+        <p>High-performing professionals who feel a pull toward meaning, wholeness, and integration &mdash; who want to explore the deeper questions without leaving behind their professional identity.</p>
+      </div>
+    </div>
+    <div class="who-not reveal">
+      <h4>What this is <em>not</em></h4>
+      <p>This is not interview prep. Not CV optimisation. Not a productivity hack or an accountability partner. Not therapy, consulting, or mentoring. This is coaching that goes to the root &mdash; how you see, how you think, and whether your actions come from clarity or conditioning.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="centered">
+      <div class="section-label reveal">06 &mdash; What I Offer</div>
+      <h2 class="section-heading reveal">Four pathways to <strong>transformation</strong></h2>
+      <p class="section-sub reveal">Each pathway is tailored to your specific challenges as a technology leader.</p>
+    </div>
+  </div>
+  <div class="container" style="max-width:1200px;">
+    <div class="services-spotlight reveal">
+      <div class="svc-panel">
+        <div class="svc-num">01</div>
+        <div class="svc-content">
+          <h3>Executive Coaching</h3>
+          <p>One-on-one sessions for senior IT leaders navigating complex organizational landscapes.</p>
+          <ul class="svc-features"><li>Strategic clarity &amp; decision making</li><li>Stakeholder influence</li><li>Executive presence</li></ul>
+        </div>
+      </div>
+      <div class="svc-panel">
+        <div class="svc-num">02</div>
+        <div class="svc-content">
+          <h3>Mind Block Transformation</h3>
+          <p>Dissolve invisible barriers — imposter syndrome, perfectionism, fear of failure.</p>
+          <ul class="svc-features"><li>Belief pattern identification</li><li>Choiceless awareness practices</li><li>Cognitive reframing</li></ul>
+        </div>
+      </div>
+      <div class="svc-panel">
+        <div class="svc-num">03</div>
+        <div class="svc-content">
+          <h3>Contemplative Leadership</h3>
+          <p>Integrate self-awareness and mindful presence into your leadership practice.</p>
+          <ul class="svc-features"><li>Witness consciousness cultivation</li><li>Authentic decision-making</li><li>Equanimity under pressure</li></ul>
+        </div>
+      </div>
+      <div class="svc-panel">
+        <div class="svc-num">04</div>
+        <div class="svc-content">
+          <h3>Career Elevation</h3>
+          <p>Navigate transitions, negotiate with power, and design the career you truly want.</p>
+          <ul class="svc-features"><li>Career architecture</li><li>Work-life integration</li><li>Purpose alignment</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENGAGEMENT LOGISTICS ===== -->
+<section class="engagement" id="engagement">
+  <div class="container">
+    <div class="centered" style="margin-bottom:3.5rem;">
+      <div class="section-label reveal">07 &mdash; How It Works</div>
+      <h2 class="section-heading reveal">The structure of a <strong>coaching engagement</strong></h2>
+      <p class="section-sub reveal">Transformation needs time, rhythm, and space. Here is what the engagement looks like.</p>
+    </div>
+    <div class="engage-grid reveal">
+      <div class="engage-item">
+        <div class="engage-icon">&#9201;</div>
+        <h4>9 Sessions</h4>
+        <p>Enough depth to move past surface-level insights and reach the structural patterns that drive behaviour.</p>
+      </div>
+      <div class="engage-item">
+        <div class="engage-icon">&#9202;</div>
+        <h4>75 Minutes Each</h4>
+        <p>Longer than industry standard. Real insight needs space to emerge, not a rushed 45-minute window.</p>
+      </div>
+      <div class="engage-item">
+        <div class="engage-icon">&#9200;</div>
+        <h4>Every 3 Weeks</h4>
+        <p>Time to live with what surfaced, test it in the real world, and return with genuine observations.</p>
+      </div>
+      <div class="engage-item">
+        <div class="engage-icon">&#9729;</div>
+        <h4>~6 Months</h4>
+        <p>The full arc from first session to completion. Long enough for lasting change, short enough for focus.</p>
+      </div>
+    </div>
+    <div class="engage-grid reveal" style="margin-top:-1px;">
+      <div class="engage-item">
+        <div class="engage-icon">&#128187;</div>
+        <h4>Virtual + In-Person</h4>
+        <p>Most sessions via video for flexibility. In-person sessions and immersive experiences available by arrangement.</p>
+      </div>
+      <div class="engage-item">
+        <div class="engage-icon">&#128172;</div>
+        <h4>Async Access</h4>
+        <p>Between sessions, you have direct access for reflections, breakthroughs, or moments that can't wait.</p>
+      </div>
+      <div class="engage-item">
+        <div class="engage-icon">&#128176;</div>
+        <h4>Investment</h4>
+        <p>Discussed during the discovery call. I work with individuals who are genuinely ready, not comparison shoppers.</p>
+      </div>
+      <div class="engage-item">
+        <div class="engage-icon">&#9889;</div>
+        <h4>Discovery Call</h4>
+        <p>45-minute complimentary conversation to explore fit. No pitch. No obligation. You'll leave with something useful either way.</p>
+      </div>
+    </div>
+    <div class="confidentiality reveal" style="margin-top:2rem;">
+      <h4>Confidentiality</h4>
+      <p>Everything discussed in coaching is held in absolute confidence. No information is shared with your employer, HR, or anyone else. The only exceptions: situations involving imminent harm to self or others, or where disclosure is required by law. This boundary is non-negotiable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI / TECH POSITIONING ===== -->
+<section class="ai-section" id="ai">
+  <div class="container">
+    <div class="centered" style="margin-bottom:3.5rem;">
+      <div class="section-label reveal">08 &mdash; The AI Leadership Gap</div>
+      <h2 class="section-heading reveal">Why a <strong>tech-native</strong> coach matters now</h2>
+    </div>
+    <div class="ai-grid">
+      <div class="ai-visual reveal">
+        <div style="text-align:center;width:100%;">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="180">
+            <circle cx="100" cy="100" r="80" fill="none" stroke="var(--stroke)" stroke-width="1"/>
+            <circle cx="100" cy="100" r="50" fill="none" stroke="var(--stroke-hover)" stroke-width="1"/>
+            <circle cx="100" cy="100" r="20" fill="var(--accent-dim)"/>
+            <text x="100" y="95" text-anchor="middle" fill="var(--accent)" font-family="var(--font-heading)" font-size="8" font-weight="700" letter-spacing="2" opacity=".6">AI</text>
+            <text x="100" y="108" text-anchor="middle" fill="var(--slate-500)" font-family="var(--font-body)" font-size="6">Leadership</text>
+            <text x="100" y="55" text-anchor="middle" fill="var(--slate-600)" font-family="var(--font-heading)" font-size="6" letter-spacing="1">STRATEGY</text>
+            <text x="100" y="155" text-anchor="middle" fill="var(--slate-600)" font-family="var(--font-heading)" font-size="6" letter-spacing="1">IDENTITY</text>
+            <text x="30" y="103" text-anchor="middle" fill="var(--slate-600)" font-family="var(--font-heading)" font-size="6" letter-spacing="1">FEAR</text>
+            <text x="170" y="103" text-anchor="middle" fill="var(--slate-600)" font-family="var(--font-heading)" font-size="6" letter-spacing="1">CLARITY</text>
+          </svg>
+          <p style="font-size:.78rem;color:var(--slate-600);margin-top:1rem;font-style:italic;">The gap between technical understanding and human readiness</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <p style="font-size:.92rem;color:var(--slate-400);line-height:1.8;margin-bottom:1.5rem;">AI is reshaping every industry, and the leaders navigating this shift face a unique crisis: the technology is advancing faster than the human systems built to govern it. Most coaches can't help you here &mdash; they don't understand what you're dealing with.</p>
+        <p style="font-size:.92rem;color:var(--slate-400);line-height:1.8;margin-bottom:1.5rem;">I've spent 23 years inside technology &mdash; building products, leading engineers, shipping AI-powered capabilities to 50 million users. I don't need you to explain your world. I've lived in it.</p>
+        <ul class="ai-points">
+          <li><strong style="color:var(--white);">Making decisions with incomplete certainty</strong> &mdash; AI strategy requires leading through ambiguity, not just technical knowledge</li>
+          <li><strong style="color:var(--white);">Identity under threat</strong> &mdash; when AI can do what you were known for, who are you?</li>
+          <li><strong style="color:var(--white);">Leading teams through fear</strong> &mdash; your people are anxious about relevance, and they're watching you for signals</li>
+          <li><strong style="color:var(--white);">The ethical dimension</strong> &mdash; navigating questions that have no playbook and no precedent</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="centered">
+      <div class="section-label reveal">09 &mdash; Voices</div>
+      <h2 class="section-heading reveal">Stories of <strong>transformation</strong></h2>
+      <p class="section-sub reveal">Real leaders. Real breakthroughs. Real impact.</p>
+    </div>
+    <div class="testi-track reveal">
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>&ldquo;I carried imposter syndrome for 15 years. Through OrbitalCatalyst, I didn't just overcome it &mdash; I understood its roots and transformed it into a source of empathy and strength.&rdquo;</blockquote>
+        <div class="testi-author"><div class="testi-avatar">RK</div><div><div class="testi-name">Rajesh K.</div><div class="testi-role">CTO, Fortune 500 Tech Co.</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>&ldquo;The blend of ICF coaching and contemplative wisdom was a revelation. For the first time, coaching addressed the whole of me, not just my KPIs.&rdquo;</blockquote>
+        <div class="testi-author"><div class="testi-avatar">PS</div><div><div class="testi-name">Priya S.</div><div class="testi-role">VP Engineering, Series D Startup</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>&ldquo;I was burned out and considering leaving tech. Six months of coaching helped me rediscover my purpose and negotiate a role that energizes me daily.&rdquo;</blockquote>
+        <div class="testi-author"><div class="testi-avatar">AM</div><div><div class="testi-name">Amit M.</div><div class="testi-role">Director, Cloud Architecture</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>&ldquo;What sets this coaching apart is the depth. It doesn't just address your career &mdash; it helps you understand the mind that's navigating it.&rdquo;</blockquote>
+        <div class="testi-author"><div class="testi-avatar">SN</div><div><div class="testi-name">Sneha N.</div><div class="testi-role">SVP Product, Global FinTech</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="centered" style="margin-bottom:3rem;">
+      <div class="section-label reveal">10 &mdash; Frequently Asked</div>
+      <h2 class="section-heading reveal">Common <strong>Questions</strong></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-q">How is your coaching different from traditional executive coaching?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">I integrate ICF-accredited coaching with contemplative insights from Krishnamurti, Ashtavakra, and Osho. I've also spent 23 years inside technology — at Cisco and Dell — so there's no credibility gap. I don't just understand coaching theory; I understand <em>your world</em>.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Who is this coaching designed for?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Senior technology leaders &mdash; Directors, VPs, CTOs, Architects, and Founders &mdash; who've mastered the outer game and are ready for the inner one. If you're successful but feel something essential is missing, this work is for you.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">What does a typical engagement look like?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">9 sessions of 75 minutes each, spaced every 3 weeks, over approximately 6 months. Each session blends structured coaching with contemplative inquiry. You also have async access between sessions for reflections and breakthroughs.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Do I need experience with meditation or spirituality?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Not at all. The contemplative elements are about self-observation and awareness &mdash; skills accessible to everyone. I meet you where you are, not where I think you should be.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">Is coaching conducted virtually or in-person?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Most sessions are virtual for flexibility. In-person sessions and immersive experiences can be arranged. The work goes equally deep either way.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">What results can I expect?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Greater clarity in decision-making. Dissolved imposter syndrome. Authentic executive presence. A deeper sense of purpose. But the real result is structural: you change how you see, and everything you see changes with it.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="container">
+    <h2 class="reveal">Ready to begin the <strong>real work</strong>?</h2>
+    <p class="reveal">45 minutes. No agenda. No pitch. Just a genuine conversation to explore whether this is the right fit.</p>
+    <a href="https://cal.com/orbitalcatalyst" target="_blank" rel="noopener" class="btn btn-accent reveal">Book a Discovery Conversation</a>
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="container" style="padding:0;">
+    <div style="margin-bottom:3rem;padding:0 2rem;">
+      <div class="section-label reveal">11 &mdash; Connect</div>
+      <h2 class="section-heading reveal">Start a <strong>conversation</strong></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <h3>Let's Talk</h3>
+        <p>Whether you're ready to begin or simply exploring, I'd welcome hearing from you. The discovery call is the best place to start.</p>
+        <div class="c-row"><div class="c-icon">&#128197;</div><div><strong>Book a Call</strong><span><a href="https://cal.com/orbitalcatalyst" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">cal.com/orbitalcatalyst</a></span></div></div>
+        <div class="c-row"><div class="c-icon">&#9993;</div><div><strong>Email</strong><span>connect@orbitalcatalyst.com</span></div></div>
+        <div class="c-row"><div class="c-icon">&#9673;</div><div><strong>Location</strong><span>Bengaluru / Global &mdash; Virtual &amp; In-Person</span></div></div>
+        <div class="c-row"><div class="c-icon">&#9200;</div><div><strong>Hours</strong><span>Mon &ndash; Fri, 9:00 AM &ndash; 6:00 PM IST</span></div></div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="field"><label for="fname">First Name</label><input type="text" id="fname" name="fname" required></div>
+          <div class="field"><label for="lname">Last Name</label><input type="text" id="lname" name="lname" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+          <div class="field"><label for="company">Company</label><input type="text" id="company" name="company"></div>
+        </div>
+        <div class="field"><label for="interest">I'm Interested In</label><select id="interest" name="interest"><option value="">Select a program...</option><option>Executive 1:1 Coaching</option><option>Mind Block Transformation</option><option>Contemplative Leadership</option><option>Career Elevation</option><option>Not sure yet &mdash; let's talk</option></select></div>
+        <div class="field"><label for="message">Your Message</label><textarea id="message" name="message" placeholder="Tell me about where you are and what you're looking for..."></textarea></div>
+        <p class="form-note">Your information is kept strictly confidential. I respond within 24 hours.</p>
+        <button type="submit" class="btn btn-accent" style="width:100%;justify-content:center;">Send Message &rarr;</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="24" height="24" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-logo>
+            <circle cx="109" cy="107" r="5" data-lp/>
+            <path d="M 109.2,106.9 A 3.5,3.5 0 0 1 112.7,110.4 A 3.9,3.9 0 0 1 108.8,114.3 A 4.5,4.5 0 0 1 104.3,109.9 A 5.0,5.0 0 0 1 109.3,104.9 A 5.7,5.7 0 0 1 115.0,110.5 A 6.4,6.4 0 0 1 108.6,116.9 A 7.2,7.2 0 0 1 101.4,109.7 A 8.1,8.1 0 0 1 109.5,101.6 A 9.2,9.2 0 0 1 118.7,110.8 A 10.3,10.3 0 0 1 108.4,121.1 A 11.7,11.7 0 0 1 96.7,109.4 A 13.1,13.1 0 0 1 109.9,96.3 A 14.8,14.8 0 0 1 124.7,111.1 A 16.7,16.7 0 0 1 108.0,127.8 A 18.9,18.9 0 0 1 89.1,109.0 A 21.3,21.3 0 0 1 110.4,87.7 A 24.0,24.0 0 0 1 134.4,111.7 A 27.1,27.1 0 0 1 107.3,138.8 A 30.5,30.5 0 0 1 76.8,108.2 A 34.4,34.4 0 0 1 111.2,73.8 A 38.8,38.8 0 0 1 150.0,112.6 A 43.8,43.8 0 0 1 106.2,156.4 A 49.4,49.4 0 0 1 56.9,107.0 A 55.7,55.7 0 0 1 112.6,51.4 A 62.8,62.8 0 0 1 175.4,114.2 A 70.8,70.8 0 0 1 104.5,185.0 A 79.9,79.9 0 0 1 24.6,105.1 A 90.1,90.1 0 0 1 114.7,15.0"
+                  fill="none" stroke-width="3" stroke-linecap="round" data-ls/>
+            <path d="M 114.7,15.0 A 100,100 0 0 1 165,28" fill="none" stroke-width="3" stroke-linecap="round" data-le/>
+            <circle cx="165" cy="28" r="7" data-lt/>
+          </svg>
+          Orbital<span class="thin">Catalyst</span>
+        </div>
+        <p style="font-size:.85rem;max-width:260px;color:var(--slate-600);">Vikas Sharma &mdash; Coaching technology leaders toward true and lasting transformation through the ORBIT&trade; model.</p>
+      </div>
+      <div><h4>Navigation</h4><div class="footer-links"><a href="#journey">Journey</a><a href="#orbit-model">ORBIT&trade; Model</a><a href="#who">Who I Coach</a><a href="#services">Services</a><a href="#engagement">How It Works</a><a href="#contact">Contact</a></div></div>
+      <div><h4>Programs</h4><div class="footer-links"><a href="#services">Executive Coaching</a><a href="#services">Mind Block Transformation</a><a href="#services">Contemplative Leadership</a><a href="#services">Career Elevation</a></div></div>
+      <div><h4>Connect</h4><div class="footer-links"><a href="https://cal.com/orbitalcatalyst" target="_blank" rel="noopener">Book a Call</a><a href="#">Privacy Policy</a></div></div>
+    </div>
+    <div class="footer-bar"><span>&copy; 2024 OrbitalCatalyst.com &middot; All rights reserved.</span><div class="footer-socials"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter">X</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="YouTube">yt</a></div></div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">&#8593;</button>
+<button class="cursor-toggle" id="cursorToggle" aria-label="Toggle cursor animation" aria-pressed="false" title="Turn off cursor effect">&#9678;</button>
+
+<!-- Theme Picker -->
+<div class="theme-picker" id="themePicker">
+  <button class="theme-picker-btn" id="themePickerBtn" aria-label="Change theme" title="Change theme">&#9681;</button>
+  <div class="theme-panel" id="themePanel">
+    <div class="theme-panel-title">Choose Theme</div>
+    <div class="theme-grid" id="themeGrid"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ===== THEME DEFINITIONS ===== */
+  const THEMES = {
+    electric: {
+      label:'Electric', font:'Rajdhani', bg:'#0d1117', accent:'#6ee7b7',
+      vars:{
+        '--font-heading':"'Rajdhani',sans-serif",'--font-body':"'Inter',system-ui,sans-serif",
+        '--heading-transform':'uppercase','--heading-spacing':'.08em',
+        '--navy':'#0d1117','--navy-soft':'#131920','--navy-card':'#171e27','--navy-light':'#1c2530',
+        '--slate-700':'#3d5068','--slate-600':'#506882','--slate-500':'#6b839c','--slate-400':'#8a9fb6',
+        '--slate-300':'#a8bdd0','--slate-200':'#c8d8e8','--white':'#f0f4f8','--pure-white':'#ffffff',
+        '--accent':'#6ee7b7','--accent-dim':'rgba(110,231,183,.15)','--accent-glow':'rgba(110,231,183,.04)',
+        '--accent-glow2':'rgba(110,180,231,.03)','--orbit-border':'rgba(110,231,183,.06)',
+        '--core-glow':'rgba(110,231,183,.05)','--nav-bg':'rgba(13,17,23,.92)',
+        '--overlay-bg':'rgba(13,17,23,.98)','--stroke':'rgba(255,255,255,.06)','--stroke-hover':'rgba(255,255,255,.15)'
+      },
+      svg:{planet:'#6ee7b7',spiral:'rgba(255,255,255,.45)',exit:'#6ee7b7',sat:'#6ee7b7'}
+    },
+    mono: {
+      label:'Monochrome', font:'Space Grotesk', bg:'#0a0a0a', accent:'#e0e0e0',
+      vars:{
+        '--font-heading':"'Space Grotesk',sans-serif",'--font-body':"'Inter',system-ui,sans-serif",
+        '--heading-transform':'uppercase','--heading-spacing':'.05em',
+        '--navy':'#0a0a0a','--navy-soft':'#111111','--navy-card':'#161616','--navy-light':'#1a1a1a',
+        '--slate-700':'#333333','--slate-600':'#555555','--slate-500':'#777777','--slate-400':'#999999',
+        '--slate-300':'#bbbbbb','--slate-200':'#dddddd','--white':'#f5f5f5','--pure-white':'#ffffff',
+        '--accent':'#e0e0e0','--accent-dim':'rgba(224,224,224,.12)','--accent-glow':'rgba(255,255,255,.03)',
+        '--accent-glow2':'rgba(200,200,200,.02)','--orbit-border':'rgba(255,255,255,.06)',
+        '--core-glow':'rgba(255,255,255,.03)','--nav-bg':'rgba(10,10,10,.92)',
+        '--overlay-bg':'rgba(10,10,10,.98)','--stroke':'rgba(255,255,255,.08)','--stroke-hover':'rgba(255,255,255,.2)'
+      },
+      svg:{planet:'#ccc',spiral:'rgba(255,255,255,.4)',exit:'#ddd',sat:'#ddd'}
+    },
+    sunset: {
+      label:'Sunset', font:'DM Sans', bg:'#1a0f0b', accent:'#ff7b54',
+      vars:{
+        '--font-heading':"'DM Sans',sans-serif",'--font-body':"'DM Sans',sans-serif",
+        '--heading-transform':'uppercase','--heading-spacing':'.06em',
+        '--navy':'#1a0f0b','--navy-soft':'#211411','--navy-card':'#291a15','--navy-light':'#30201a',
+        '--slate-700':'#5e3f30','--slate-600':'#7c5545','--slate-500':'#9a6b5c','--slate-400':'#b8877a',
+        '--slate-300':'#d4a99a','--slate-200':'#e8c8b8','--white':'#fce8e0','--pure-white':'#fff5f0',
+        '--accent':'#ff7b54','--accent-dim':'rgba(255,123,84,.15)','--accent-glow':'rgba(255,123,84,.05)',
+        '--accent-glow2':'rgba(255,180,120,.03)','--orbit-border':'rgba(255,123,84,.08)',
+        '--core-glow':'rgba(255,123,84,.06)','--nav-bg':'rgba(26,15,11,.92)',
+        '--overlay-bg':'rgba(26,15,11,.98)','--stroke':'rgba(255,255,255,.06)','--stroke-hover':'rgba(255,255,255,.15)'
+      },
+      svg:{planet:'#ff7b54',spiral:'rgba(255,255,255,.4)',exit:'#ff7b54',sat:'#ff7b54'}
+    },
+    ocean: {
+      label:'Ocean', font:'Outfit', bg:'#0a192f', accent:'#64ffda',
+      vars:{
+        '--font-heading':"'Outfit',sans-serif",'--font-body':"'Inter',system-ui,sans-serif",
+        '--heading-transform':'uppercase','--heading-spacing':'.06em',
+        '--navy':'#0a192f','--navy-soft':'#0f2040','--navy-card':'#142848','--navy-light':'#1a3050',
+        '--slate-700':'#2a3a50','--slate-600':'#3b4e68','--slate-500':'#506480','--slate-400':'#6b7a9d',
+        '--slate-300':'#8892b0','--slate-200':'#a8b2d1','--white':'#ccd6f6','--pure-white':'#e6f1ff',
+        '--accent':'#64ffda','--accent-dim':'rgba(100,255,218,.12)','--accent-glow':'rgba(100,255,218,.04)',
+        '--accent-glow2':'rgba(100,200,255,.03)','--orbit-border':'rgba(100,255,218,.06)',
+        '--core-glow':'rgba(100,255,218,.05)','--nav-bg':'rgba(10,25,47,.92)',
+        '--overlay-bg':'rgba(10,25,47,.98)','--stroke':'rgba(255,255,255,.06)','--stroke-hover':'rgba(255,255,255,.15)'
+      },
+      svg:{planet:'#64ffda',spiral:'rgba(255,255,255,.4)',exit:'#64ffda',sat:'#64ffda'}
+    },
+    royal: {
+      label:'Royal', font:'Poppins', bg:'#110b1e', accent:'#b794f4',
+      vars:{
+        '--font-heading':"'Poppins',sans-serif",'--font-body':"'Inter',system-ui,sans-serif",
+        '--heading-transform':'uppercase','--heading-spacing':'.05em',
+        '--navy':'#110b1e','--navy-soft':'#180f28','--navy-card':'#1e1432','--navy-light':'#251a3c',
+        '--slate-700':'#443664','--slate-600':'#604f80','--slate-500':'#7c6c9c','--slate-400':'#9a8ab8',
+        '--slate-300':'#b8a9d4','--slate-200':'#d0c4e4','--white':'#e8e0f4','--pure-white':'#f4f0ff',
+        '--accent':'#b794f4','--accent-dim':'rgba(183,148,244,.15)','--accent-glow':'rgba(183,148,244,.05)',
+        '--accent-glow2':'rgba(148,130,244,.03)','--orbit-border':'rgba(183,148,244,.08)',
+        '--core-glow':'rgba(183,148,244,.06)','--nav-bg':'rgba(17,11,30,.92)',
+        '--overlay-bg':'rgba(17,11,30,.98)','--stroke':'rgba(255,255,255,.06)','--stroke-hover':'rgba(255,255,255,.15)'
+      },
+      svg:{planet:'#b794f4',spiral:'rgba(255,255,255,.4)',exit:'#b794f4',sat:'#b794f4'}
+    },
+    ember: {
+      label:'Ember', font:'Sora', bg:'#1a1410', accent:'#fbbf24',
+      vars:{
+        '--font-heading':"'Sora',sans-serif",'--font-body':"'Inter',system-ui,sans-serif",
+        '--heading-transform':'uppercase','--heading-spacing':'.06em',
+        '--navy':'#1a1410','--navy-soft':'#211a14','--navy-card':'#29201a','--navy-light':'#302620',
+        '--slate-700':'#484038','--slate-600':'#686050','--slate-500':'#887860','--slate-400':'#a89880',
+        '--slate-300':'#c8b8a0','--slate-200':'#ddd0b8','--white':'#f4e8d8','--pure-white':'#fff8f0',
+        '--accent':'#fbbf24','--accent-dim':'rgba(251,191,36,.15)','--accent-glow':'rgba(251,191,36,.04)',
+        '--accent-glow2':'rgba(251,220,100,.03)','--orbit-border':'rgba(251,191,36,.07)',
+        '--core-glow':'rgba(251,191,36,.05)','--nav-bg':'rgba(26,20,16,.92)',
+        '--overlay-bg':'rgba(26,20,16,.98)','--stroke':'rgba(255,255,255,.06)','--stroke-hover':'rgba(255,255,255,.15)'
+      },
+      svg:{planet:'#fbbf24',spiral:'rgba(255,255,255,.4)',exit:'#fbbf24',sat:'#fbbf24'}
+    },
+    forest: {
+      label:'Forest', font:'Cormorant', bg:'#0b1410', accent:'#86efac',
+      vars:{
+        '--font-heading':"'Cormorant Garamond',serif",'--font-body':"'Inter',system-ui,sans-serif",
+        '--heading-transform':'none','--heading-spacing':'.02em',
+        '--navy':'#0b1410','--navy-soft':'#101c16','--navy-card':'#15241c','--navy-light':'#1a2c22',
+        '--slate-700':'#304838','--slate-600':'#486850','--slate-500':'#608870','--slate-400':'#80a890',
+        '--slate-300':'#a0c8b0','--slate-200':'#c0e0cc','--white':'#e0f4e8','--pure-white':'#f0fff4',
+        '--accent':'#86efac','--accent-dim':'rgba(134,239,172,.12)','--accent-glow':'rgba(134,239,172,.04)',
+        '--accent-glow2':'rgba(100,200,140,.03)','--orbit-border':'rgba(134,239,172,.06)',
+        '--core-glow':'rgba(134,239,172,.05)','--nav-bg':'rgba(11,20,16,.92)',
+        '--overlay-bg':'rgba(11,20,16,.98)','--stroke':'rgba(255,255,255,.06)','--stroke-hover':'rgba(255,255,255,.15)'
+      },
+      svg:{planet:'#86efac',spiral:'rgba(255,255,255,.4)',exit:'#86efac',sat:'#86efac'}
+    },
+    ivory: {
+      label:'Ivory', font:'Playfair', bg:'#faf8f5', accent:'#b8860b',
+      vars:{
+        '--font-heading':"'Playfair Display',serif",'--font-body':"'Inter',system-ui,sans-serif",
+        '--heading-transform':'none','--heading-spacing':'.01em',
+        '--navy':'#faf8f5','--navy-soft':'#f0ede8','--navy-card':'#ffffff','--navy-light':'#e8e4de',
+        '--slate-700':'#c8c4c0','--slate-600':'#a8a4a0','--slate-500':'#8a8480','--slate-400':'#6b6560',
+        '--slate-300':'#4a4540','--slate-200':'#2a2520','--white':'#1a1816','--pure-white':'#0a0a0a',
+        '--accent':'#b8860b','--accent-dim':'rgba(184,134,11,.15)','--accent-glow':'rgba(184,134,11,.06)',
+        '--accent-glow2':'rgba(184,160,60,.04)','--orbit-border':'rgba(184,134,11,.1)',
+        '--core-glow':'rgba(184,134,11,.08)','--nav-bg':'rgba(250,248,245,.92)',
+        '--overlay-bg':'rgba(250,248,245,.98)','--stroke':'rgba(0,0,0,.06)','--stroke-hover':'rgba(0,0,0,.12)'
+      },
+      svg:{planet:'#b8860b',spiral:'rgba(0,0,0,.3)',exit:'#b8860b',sat:'#b8860b'}
+    }
+  };
+
+  let currentTheme = 'electric';
+
+  /* Apply a theme by ID */
+  function applyTheme(id){
+    const theme = THEMES[id];
+    if(!theme) return;
+    currentTheme = id;
+    const root = document.documentElement;
+    for(const[k,v] of Object.entries(theme.vars)) root.style.setProperty(k,v);
+    /* Update SVG logo colors */
+    document.querySelectorAll('[data-lp]').forEach(el=>el.setAttribute('fill',theme.svg.planet));
+    document.querySelectorAll('[data-ls]').forEach(el=>el.setAttribute('stroke',theme.svg.spiral));
+    document.querySelectorAll('[data-le]').forEach(el=>el.setAttribute('stroke',theme.svg.exit));
+    document.querySelectorAll('[data-lt]').forEach(el=>el.setAttribute('fill',theme.svg.sat));
+    /* Badge label */
+    const badge=document.getElementById('themeBadgeLabel');
+    if(badge) badge.textContent=theme.label;
+    /* Swatch active states */
+    document.querySelectorAll('.theme-swatch').forEach(sw=>{
+      sw.classList.toggle('active',sw.dataset.theme===id);
+    });
+    /* Save preference */
+    try{localStorage.setItem('oc-theme',id);}catch(e){}
+  }
+
+  /* Build theme grid swatches */
+  const grid=document.getElementById('themeGrid');
+  for(const[id,t] of Object.entries(THEMES)){
+    const btn=document.createElement('button');
+    btn.className='theme-swatch'+(id==='electric'?' active':'');
+    btn.dataset.theme=id;
+    btn.innerHTML=`<span class="swatch-preview" style="background:${t.bg}"><span class="swatch-dot" style="background:${t.accent};border-color:${t.bg}"></span></span><span class="swatch-label">${t.label}</span>`;
+    btn.addEventListener('click',()=>applyTheme(id));
+    grid.appendChild(btn);
+  }
+
+  /* Restore saved theme */
+  try{const saved=localStorage.getItem('oc-theme');if(saved&&THEMES[saved])applyTheme(saved);}catch(e){}
+
+  /* Preloader */
+  window.addEventListener('load',()=>{document.getElementById('preloader').classList.add('hidden');});
+
+  /* Custom cursor */
+  const dot=document.getElementById('cursorDot'),ring=document.getElementById('cursorRing');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
+  (function moveCursor(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;dot.style.transform=`translate(${mx-3}px,${my-3}px)`;ring.style.transform=`translate(${rx-18}px,${ry-18}px)`;requestAnimationFrame(moveCursor);})();
+  document.querySelectorAll('a,button,.svc-panel,.pillar,.faq-q').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ring.style.width='52px';ring.style.height='52px';});
+    el.addEventListener('mouseleave',()=>{ring.style.width='36px';ring.style.height='36px';});
+  });
+
+  /* Cursor toggle */
+  const cursorToggle=document.getElementById('cursorToggle');
+  let cursorOn=true;
+  cursorToggle.addEventListener('click',()=>{
+    cursorOn=!cursorOn;
+    document.body.classList.toggle('cursor-off',!cursorOn);
+    cursorToggle.setAttribute('aria-pressed',!cursorOn);
+    cursorToggle.title=cursorOn?'Turn off cursor effect':'Turn on cursor effect';
+  });
+
+  /* Theme picker toggle */
+  const pickerBtn=document.getElementById('themePickerBtn'),panel=document.getElementById('themePanel');
+  let panelOpen=false;
+  pickerBtn.addEventListener('click',()=>{
+    panelOpen=!panelOpen;
+    panel.classList.toggle('open',panelOpen);
+    pickerBtn.classList.toggle('active',panelOpen);
+  });
+  document.addEventListener('click',e=>{
+    if(panelOpen&&!document.getElementById('themePicker').contains(e.target)){
+      panelOpen=false;panel.classList.remove('open');pickerBtn.classList.remove('active');
+    }
+  });
+
+  /* Nav & back-to-top & picker visibility */
+  const nav=document.getElementById('nav'),backTop=document.getElementById('backTop');
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    nav.classList.toggle('scrolled',y>60);
+    backTop.classList.toggle('show',y>600);
+    cursorToggle.classList.toggle('show',y>600);
+    pickerBtn.classList.toggle('show',y>600);
+  },{passive:true});
+  backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+  /* Hamburger */
+  const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu');
+  hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');mobileMenu.classList.toggle('open');document.body.style.overflow=mobileMenu.classList.contains('open')?'hidden':'';});
+  window.closeMenu=()=>{hamburger.classList.remove('active');mobileMenu.classList.remove('open');document.body.style.overflow='';};
+
+  /* Reveal on scroll */
+  const revealObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+  /* Animated counters */
+  let counted=false;
+  const countObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting&&!counted){counted=true;document.querySelectorAll('.stat-num[data-target]').forEach(num=>{const target=+num.dataset.target,dur=2000,start=performance.now();(function tick(now){const elapsed=now-start,progress=Math.min(elapsed/dur,1),eased=1-Math.pow(1-progress,3);num.textContent=Math.round(target*eased)+(target<100?'%':'+');if(progress<1)requestAnimationFrame(tick);})(start);});}});},{threshold:.3});
+  const statsBar=document.querySelector('.stats-bar');if(statsBar)countObs.observe(statsBar);
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement,answer=item.querySelector('.faq-a'),isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(fi=>{fi.classList.remove('open');fi.querySelector('.faq-a').style.maxHeight=null;});if(!isOpen){item.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';}});});
+
+  /* Contact form */
+  document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const btn=this.querySelector('button[type="submit"]');btn.textContent='Sending...';btn.disabled=true;setTimeout(()=>{btn.innerHTML='Sent &#10003;';setTimeout(()=>{this.reset();btn.innerHTML='Send Message &rarr;';btn.disabled=false;},2500);},1200);});
+
+  /* Smooth scroll */
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});});
+
+  /* Parallax grid lines */
+  window.addEventListener('scroll',()=>{const y=window.scrollY,grid=document.querySelector('.hero-grid');if(grid&&y<window.innerHeight)grid.style.transform=`translateY(${y*.15}px)`;},{passive:true});
+})();
+</script>
+</body>
+</html>
