@@ -108,8 +108,8 @@
     .btn-outline { background:transparent; border:1px solid var(--slate-600); color:var(--slate-300); }
     .btn-outline:hover { border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
 
-    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; z-index:200; }
-    .hamburger span { display:block; width:28px; height:1.5px; background:var(--pure-white); transition:var(--transition); }
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:1px solid var(--stroke); cursor:pointer; padding:6px; z-index:300; }
+    .hamburger span { display:block; width:28px; height:1.5px; background:var(--accent); transition:var(--transition); }
     .hamburger.active span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
     .hamburger.active span:nth-child(2) { opacity:0; }
     .hamburger.active span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
@@ -261,6 +261,7 @@
 
     /* Theme toggle */
     .theme-toggle-wrap { position:fixed; top:1rem; right:1rem; z-index:200; display:flex; align-items:center; gap:0; font-family:var(--font-heading); }
+    @media(max-width:1024px){ .theme-toggle-wrap{display:none;} }
     .theme-toggle-wrap .mode-label { font-size:.7rem; font-weight:700; color:var(--slate-500); letter-spacing:.15em; text-transform:var(--heading-transform); padding:.45rem .6rem; background:var(--navy-card); border:1px solid var(--stroke); border-right:none; transition:background .4s ease,color .4s ease; white-space:nowrap; }
     .theme-toggle { width:42px; height:34px; border:1px solid var(--stroke); background:var(--navy-card); color:var(--slate-400); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:1.05rem; line-height:1; transition:all .3s; }
     .theme-toggle:hover { border-color:var(--accent); color:var(--accent); background:var(--navy-soft); }
@@ -279,7 +280,7 @@
 
     /* Responsive */
     @media(max-width:1024px){
-      .hamburger{display:flex;}
+      .hamburger{display:flex;position:fixed;top:1rem;right:1rem;z-index:300;}
       .nav-links,.nav .btn{display:none;}
       .hero-inner{grid-template-columns:1fr;text-align:center;}
       .hero-sub{margin-inline:auto;}
