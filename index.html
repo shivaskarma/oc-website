@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -298,6 +298,10 @@
       .orbit-step{min-height:auto;margin-left:0;}
     }
     @media(max-width:640px){
+      .hero-inner{padding-top:6rem;padding-bottom:4rem;}
+      .hero h1{font-size:clamp(2.2rem,8vw,3.5rem);}
+      .hero-sub{font-size:.9rem;}
+      .orbital-vis{max-width:220px;}
       .services-spotlight{grid-template-columns:1fr;}
       .orbit-steps{grid-template-columns:1fr;}
       .form-row{grid-template-columns:1fr;}
@@ -321,8 +325,8 @@
 </div>
 
 <div class="theme-toggle-wrap">
-  <span class="mode-label" id="themeModeLabel">Dark</span>
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Switch to light mode">&#9790;</button>
+  <span class="mode-label" id="themeModeLabel">Light</span>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Switch to dark mode">&#9728;</button>
 </div>
 
 <nav class="nav" id="nav">
@@ -550,8 +554,8 @@
   const html = document.documentElement;
   const toggle = document.getElementById('themeToggle');
   const modeLabel = document.getElementById('themeModeLabel');
-  let isDark = true;
-  try { const saved = localStorage.getItem('oc-mode'); if (saved === 'light') { isDark = false; html.setAttribute('data-theme','light'); } } catch(e){}
+  let isDark = false;
+  try { const saved = localStorage.getItem('oc-mode'); if (saved === 'dark') { isDark = true; html.setAttribute('data-theme','dark'); } } catch(e){}
   function updateToggle(){ toggle.innerHTML = isDark ? '&#9790;' : '&#9728;'; toggle.title = isDark ? 'Switch to light mode' : 'Switch to dark mode'; if(modeLabel) modeLabel.textContent = isDark ? 'Dark' : 'Light'; }
   updateToggle();
   toggle.addEventListener('click', () => { isDark = !isDark; html.setAttribute('data-theme', isDark ? 'dark' : 'light'); updateToggle(); try { localStorage.setItem('oc-mode', isDark ? 'dark' : 'light'); } catch(e){} });
