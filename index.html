@@ -115,6 +115,8 @@
     .hamburger.active span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
     .mobile-menu { position:fixed; inset:0; background:var(--overlay-bg); backdrop-filter:blur(24px); z-index:150; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2.5rem; opacity:0; visibility:hidden; transition:opacity .4s ease,visibility .4s ease; }
     .mobile-menu.open { opacity:1; visibility:visible; }
+    .mobile-close { position:absolute; top:1rem; right:1rem; font-size:2rem; color:var(--slate-400); background:none; border:none; cursor:pointer; padding:0.5rem; transition:color var(--transition); z-index:200; }
+    .mobile-close:hover { color:var(--accent); }
     .mobile-menu a { font-family:var(--font-heading); font-size:1.8rem; font-weight:600; color:var(--slate-400); text-decoration:none; transition:color var(--transition); letter-spacing:.15em; text-transform:var(--heading-transform); }
     .mobile-menu a:hover { color:var(--accent); }
 
@@ -283,7 +285,7 @@
       .hamburger{display:flex;position:fixed;top:1rem;left:1rem;z-index:300;}
       .nav-links,.nav .btn{display:none;}
       .nav-inner{justify-content:center;position:relative;}
-      .brand{position:absolute;left:50%;transform:translateX(-50%);margin:0;}
+      .brand{position:absolute;left:50%;top:1rem;transform:translateX(-50%);margin:0;}
       .hero-inner{grid-template-columns:1fr;text-align:center;}
       .hero-sub{margin-inline:auto;}
       .hero-cred{text-align:center;}
@@ -358,6 +360,7 @@
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMenu()" aria-label="Close menu">&times;</button>
   <a href="#orbit-model" onclick="closeMenu()">ORBIT Model</a>
   <a href="#about" onclick="closeMenu()">About</a>
   <a href="#services" onclick="closeMenu()">Services</a>
